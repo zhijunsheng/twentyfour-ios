@@ -18,10 +18,10 @@ class TwentyFourTests: XCTestCase {
     }
     
     func testFindSolution(){
-        findSolution(a: 3, b: 8, c: 4, d: 9)
-        findSolution(a: 24, b: 6, c: 6, d: 2)
-        findSolution(a: 3, b: 3, c: 8, d: 8)
-        findSolution(a: 6, b: 6, c: 4, d: 4)
+//        findSolution(a: 3, b: 8, c: 4, d: 9)
+//        findSolution(a: 24, b: 6, c: 6, d: 2)
+//        findSolution(a: 3, b: 3, c: 8, d: 8)
+//        findSolution(a: 6, b: 6, c: 4, d: 4)
         findSolution(a: 5, b: 1, c: 3, d: 1)
         
         //flaw: It cannot have a solution in this type of format. (a + or - b) * or / (c + or - d)
