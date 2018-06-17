@@ -18,19 +18,34 @@ class TwentyFourTests: XCTestCase {
     }
     
     func testFindSolution(){
-//        findSolution(a: 3, b: 8, c: 4, d: 9)
-//        findSolution(a: 24, b: 6, c: 6, d: 2)
-//        findSolution(a: 3, b: 3, c: 8, d: 8)
-//        findSolution(a: 6, b: 6, c: 4, d: 4)
-        findSolution(a: 5, b: 1, c: 3, d: 1)
+        XCTAssertEqual("((3.0 + 8.0) + (4.0 + 9.0))", findSolution(a: 3, b: 8, c: 4, d: 9))
+        XCTAssertEqual("(((24.0 - 6.0) - 6.0) * 2.0)", findSolution(a: 24, b: 6, c: 6, d: 2))
+        XCTAssertEqual("(8.0 / (3.0 - (8.0 / 3.0)))", findSolution(a: 3, b: 3, c: 8, d: 8))
+        XCTAssertEqual("nothing", findSolution(a: 6, b: 6, c: 4, d: 4))
+        XCTAssertEqual("((5.0 + 1.0) * (3.0 + 1.0))", findSolution(a: 5, b: 1, c: 3, d: 1))
+        XCTAssertEqual("(((10.0 * 10.0) - 4.0) / 4.0)", findSolution(a: 10, b: 10, c: 4, d: 4))
+        XCTAssertEqual("((5.0 + 1.0) * (1.0 + 3.0))", findSolution(a: 5, b: 3, c: 1, d: 1))
         
-        //flaw: It cannot have a solution in this type of format. (a + or - b) * or / (c + or - d)
+        print(findSolution(a: 5, b: 3, c: 1, d: 1))
     }
     
-    func findSolution(a: Double, b: Double, c: Double, d: Double){
+    func findSolution(a: Double, b: Double, c: Double, d: Double) -> String {
         
         for abcd in twentyFour(a: a, b: b, c: c, d: d){
             for (i, ab) in calculationOfTwoItems(itemOne: abcd.a, itemTwo: abcd.b).enumerated() {
+                
+                for (l, cd) in calculationOfTwoItems(itemOne: abcd.c, itemTwo: abcd.d).enumerated() {
+                    for (v, z) in calculationOfTwoItems(itemOne: ab, itemTwo: cd).enumerated() {
+                        
+                        if abs(z - 24.0) < 0.0001 {
+                            let ab = expressionOfTwoItems(x: "\(abcd.a)", y: "\(abcd.b)", operation: i)
+                            let cd = expressionOfTwoItems(x: "\(abcd.c)", y: "\(abcd.d)", operation: l)
+                            let abcd = expressionOfTwoItems(x: ab, y: cd, operation: v)
+                            print(abcd)
+                            return abcd
+                        }
+                    }
+                }
                 
                 for (j, abc) in calculationOfTwoItems(itemOne: ab, itemTwo: abcd.c).enumerated() {
                  
@@ -41,26 +56,16 @@ class TwentyFourTests: XCTestCase {
                             let abc = expressionOfTwoItems(x: ab, y: "\(abcd.c)", operation: j)
                             let abcd = expressionOfTwoItems(x: abc, y: "\(abcd.d)", operation: k)
                             print(abcd)
-                            return
+                            return abcd
                         }
                     }
                 }
 
-                for (l, cd) in calculationOfTwoItems(itemOne: c, itemTwo: d).enumerated() {
-                    for (v, z) in calculationOfTwoItems(itemOne: ab, itemTwo: cd).enumerated() {
-                        
-                        if abs(z - 24.0) < 0.0001 {
-                            let ab = expressionOfTwoItems(x: "\(abcd.a)", y: "\(abcd.b)", operation: i)
-                            let cd = expressionOfTwoItems(x: "\(abcd.c)", y: "\(abcd.d)", operation: l)
-                            let abcd = expressionOfTwoItems(x: ab, y: cd, operation: v)
-                            print(abcd)
-                            return
-                        }
-                    }
-                }
+                
             }
         }
         print("There is no answer")
+    return "nothing"
     }
     
     func twentyFour(a: Double, b: Double, c: Double, d: Double) -> [ABCD] {
