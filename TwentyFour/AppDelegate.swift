@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TwentyFour
 //
-//  Created by Bowen Lin on 2018-05-08.
-//  Copyright © 2018 Bowen Lin. All rights reserved.
+//  Created by Donald Sheng on 2018-07-24.
+//  Copyright © 2018 Gold Thumb Inc. All rights reserved.
 //
 
 import UIKit
