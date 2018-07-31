@@ -10,11 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var cardOne: UILabel!
+    @IBOutlet weak var cardTwo: UILabel!
+    @IBOutlet weak var cardThree: UILabel!
+    @IBOutlet weak var cardFour: UILabel!
     
-   
-    
+    @IBAction func buttonTapped(_ sender: Any) {
+        
+        let cardOneValue = arc4random() % 10 + 1
+        cardOne.text = "\(cardOneValue)"
+        
+        let cardTwoValue = arc4random() % 10 + 1
+        cardTwo.text = "\(cardTwoValue)"
+        
+        let cardThreeValue = arc4random() % 10 + 1
+        cardThree.text = "\(cardThreeValue)"
+        
+        let cardFourValue = arc4random() % 10 + 1
+        cardFour.text = "\(cardFourValue)"
+    }
 }
-
-
-
-
