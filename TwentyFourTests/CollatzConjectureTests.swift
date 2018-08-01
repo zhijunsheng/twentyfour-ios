@@ -50,6 +50,12 @@ class CollatzConjectureTests: XCTestCase {
         
         // your code goes here to swap a and b:
         (a,b) = (b,a)
+        
         print("a = \(a), b = \(b)")
     }
+    
+    func testSwapTwoInts2() {
+        // try a + b
+    }
+
 }
