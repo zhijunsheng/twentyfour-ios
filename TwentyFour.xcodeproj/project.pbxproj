@@ -13,6 +13,7 @@
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
 		36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE241E20A271D200C22601 /* TwentyFourTests.swift */; };
+		C092EF0F211139AB00676EE2 /* CollatzConjectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C092EF0E211139AB00676EE2 /* CollatzConjectureTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FE241E20A271D200C22601 /* TwentyFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyFourTests.swift; sourceTree = "<group>"; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C092EF0E211139AB00676EE2 /* CollatzConjectureTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollatzConjectureTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		36FE241D20A271D200C22601 /* TwentyFourTests */ = {
 			isa = PBXGroup;
 			children = (
+				C092EF0E211139AB00676EE2 /* CollatzConjectureTests.swift */,
 				36FE241E20A271D200C22601 /* TwentyFourTests.swift */,
 				36FE242020A271D200C22601 /* Info.plist */,
 			);
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */,
+				C092EF0F211139AB00676EE2 /* CollatzConjectureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
