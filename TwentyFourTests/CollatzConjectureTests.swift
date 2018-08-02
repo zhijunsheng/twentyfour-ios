@@ -55,7 +55,14 @@ class CollatzConjectureTests: XCTestCase {
     }
     
     func testSwapTwoInts2() {
-        // try a + b
+        var a = 5
+        var b = 3
+        print("a = \(a), b = \(b)")
+        
+        // your code goes here to swap a and b, try a + b
+       
+        
+        print("a = \(a), b = \(b)")
     }
 
 }
