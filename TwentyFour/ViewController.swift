@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         
         let number4 = arc4random() % 10 + 1
         cardFour.text = "\(number4)"
+        
+        
     }
     
 
