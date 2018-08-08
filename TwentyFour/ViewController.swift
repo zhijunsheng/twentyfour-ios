@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var card0Label: UILabel!
     
-   
+    @IBOutlet weak var card1Label: UILabel!
     
+    @IBOutlet weak var card2Label: UILabel!
+    
+    @IBOutlet weak var card3Label: UILabel!
 }
 
 

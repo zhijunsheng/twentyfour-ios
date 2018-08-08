@@ -11,5 +11,7 @@ import XCTest
 
 class TwentyFourTests: XCTestCase {
     
-
+    func testPokerCard() {
+        print("🃟")
+    }
 }
