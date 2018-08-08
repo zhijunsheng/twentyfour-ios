@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var card2Label: UILabel!
     
     @IBOutlet weak var card3Label: UILabel!
+    
+    @IBAction func touchShuffle(_ sender: UIButton) {
+    }
 }
 
 
