@@ -17,13 +17,65 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W4H-2S-0ht">
+                                <rect key="frame" x="161" y="70" width="53.5" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qb-2n-RAk">
+                                <rect key="frame" x="173.5" y="138" width="28" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ye8-1u-kn4">
+                                <rect key="frame" x="173" y="206" width="29" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gu1-f4-NZM">
+                                <rect key="frame" x="172" y="274" width="30" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-kC-cKe">
+                                <rect key="frame" x="137.5" y="545" width="100" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="touchNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8I4-td-aBS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W4H-2S-0ht" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Nsk-ad-Ytr"/>
+                            <constraint firstItem="6qb-2n-RAk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P1D-Gb-kfY"/>
+                            <constraint firstItem="Ye8-1u-kn4" firstAttribute="top" secondItem="6qb-2n-RAk" secondAttribute="bottom" constant="8" symbolic="YES" id="QfU-87-iNA"/>
+                            <constraint firstItem="W4H-2S-0ht" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ra7-Sg-MYf"/>
+                            <constraint firstItem="gu1-f4-NZM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TQq-jj-F2d"/>
+                            <constraint firstItem="6qb-2n-RAk" firstAttribute="top" secondItem="W4H-2S-0ht" secondAttribute="bottom" constant="8" symbolic="YES" id="eMc-Ja-bqh"/>
+                            <constraint firstItem="hxI-kC-cKe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fUL-kn-1xK"/>
+                            <constraint firstItem="Ye8-1u-kn4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jio-pZ-SbF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hxI-kC-cKe" secondAttribute="bottom" constant="50" id="ntS-2R-1FB"/>
+                            <constraint firstItem="gu1-f4-NZM" firstAttribute="top" secondItem="Ye8-1u-kn4" secondAttribute="bottom" constant="8" symbolic="YES" id="ymv-YL-gVO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="card0Label" destination="W4H-2S-0ht" id="eqI-TQ-ZdS"/>
+                        <outlet property="card1Label" destination="6qb-2n-RAk" id="Mwb-58-hL2"/>
+                        <outlet property="card2Label" destination="Ye8-1u-kn4" id="dum-iG-MIH"/>
+                        <outlet property="card3Label" destination="gu1-f4-NZM" id="T4t-1E-tPs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.875" y="133.09859154929578"/>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
