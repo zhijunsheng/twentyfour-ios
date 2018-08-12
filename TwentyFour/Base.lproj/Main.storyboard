@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,45 +15,45 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwentyFour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🂠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxt-fH-oVX">
-                                <rect key="frame" x="188.66666666666666" y="35" width="37" height="37.666666666666657"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <rect key="frame" x="160" y="50" width="55.5" height="56"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🂠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuL-Am-TCe">
-                                <rect key="frame" x="188.66666666666666" y="80.666666666666671" width="37" height="38"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <rect key="frame" x="160" y="114" width="55.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🂠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkM-sB-OFR">
-                                <rect key="frame" x="188.66666666666666" y="126.66666666666667" width="37" height="38.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <rect key="frame" x="160" y="179.5" width="55.5" height="57"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🂠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxe-qQ-sZW">
-                                <rect key="frame" x="188.66666666666666" y="173" width="37" height="38.666666666666657"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <rect key="frame" x="160" y="244.5" width="55.5" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ads-yW-9mq">
-                                <rect key="frame" x="132.66666666666666" y="585" width="148.99999999999997" height="51"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <rect key="frame" x="77" y="497" width="221" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <state key="normal" title="Re-Shuffle"/>
                                 <connections>
                                     <action selector="touchShuffle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMU-qu-mTM"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeZ-oo-7yv">
-                                <rect key="frame" x="20" y="353" width="374" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="打草稿" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DeZ-oo-7yv">
+                                <rect key="frame" x="20" y="312" width="335" height="43"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -71,7 +71,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ads-yW-9mq" secondAttribute="bottom" constant="100" id="rQS-i1-RFA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DeZ-oo-7yv" secondAttribute="trailing" constant="20" id="uhF-yO-EOv"/>
                             <constraint firstItem="pkM-sB-OFR" firstAttribute="top" secondItem="iuL-Am-TCe" secondAttribute="bottom" constant="8" symbolic="YES" id="vBk-bu-CpG"/>
-                            <constraint firstItem="Hxt-fH-oVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="vSm-BR-obf"/>
+                            <constraint firstItem="Hxt-fH-oVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="vSm-BR-obf"/>
                             <constraint firstItem="hxe-qQ-sZW" firstAttribute="top" secondItem="pkM-sB-OFR" secondAttribute="bottom" constant="8" symbolic="YES" id="xeg-37-2Qp"/>
                             <constraint firstItem="DeZ-oo-7yv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zYS-Lz-aG9"/>
                         </constraints>
