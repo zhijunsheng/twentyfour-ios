@@ -19,6 +19,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var card3Label: UILabel!
     
     @IBAction func touchShuffle(_ sender: UIButton) {
+        var card0Value = arc4random() % 10
+        var card1Value = arc4random() % 10
+        var card2Value = arc4random() % 10
+        var card3Value = arc4random() % 10
+        if card0Value == 0 {
+            card0Value = 10
+        }
+        if card1Value == 0 {
+            card1Value = 10
+        }
+        if card2Value == 0 {
+            card2Value = 10
+        }
+        if card3Value == 0 {
+            card3Value = 10
+        }
+        card0Label.text = "\(card0Value)"
+        card1Label.text = "\(card1Value)"
+        card2Label.text = "\(card2Value)"
+        card3Label.text = "\(card3Value)"
     }
 }
 
