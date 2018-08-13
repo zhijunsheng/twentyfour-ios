@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
+    var soundPlayer: AVAudioPlayer!
+    
     @IBOutlet weak var card0Label: UILabel!
-    
     @IBOutlet weak var card1Label: UILabel!
-    
     @IBOutlet weak var card2Label: UILabel!
-    
     @IBOutlet weak var card3Label: UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let soundFilePath = Bundle.main.path(forResource: "pick_release", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: soundFilePath!)
+        soundPlayer = try? AVAudioPlayer(contentsOf: soundURL)
+    }
     
     @IBAction func touchShuffle(_ sender: UIButton) {
         var card0Value = arc4random() % 10
@@ -39,9 +47,7 @@ class ViewController: UIViewController {
         card1Label.text = "\(card1Value)"
         card2Label.text = "\(card2Value)"
         card3Label.text = "\(card3Value)"
+        
+        soundPlayer.play()
     }
 }
-
-
-
-
