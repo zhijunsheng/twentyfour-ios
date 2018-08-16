@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -16,6 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardThreeLabel: UILabel!
     @IBOutlet weak var cardFourLabel: UILabel!
     
+    var soundPlayer: AVAudioPlayer!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let path = Bundle.main.path(forResource: "pick_release", ofType: "wav")
+        let url = URL(fileURLWithPath: path!)
+        soundPlayer = try? AVAudioPlayer(contentsOf: url)
+        
+    }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
         
@@ -28,5 +39,7 @@ class ViewController: UIViewController {
         cardTwoLabel.text = "\(cardTwoInt)"
         cardThreeLabel.text = "\(cardThreeInt)"
         cardFourLabel.text = "\(cardFourInt)"
+        
+        soundPlayer.play()
     }
 }
