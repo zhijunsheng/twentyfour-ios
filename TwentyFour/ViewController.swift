@@ -25,11 +25,16 @@ class ViewController: UIViewController {
         let path = Bundle.main.path(forResource: "pick_release", ofType: "wav")
         let url = URL(fileURLWithPath: path!)
         soundPlayer = try? AVAudioPlayer(contentsOf: url)
-        
+       
+        makeRandomLabels()
     }
     
     @IBAction func nextButtonTapped(_ sender: Any) {
-        
+        makeRandomLabels()
+        soundPlayer.play()
+    }
+
+    func makeRandomLabels(){
         let cardOneInt = arc4random() % 10 + 1
         let cardTwoInt = arc4random() % 10 + 1
         let cardThreeInt = arc4random() % 10 + 1
@@ -39,7 +44,5 @@ class ViewController: UIViewController {
         cardTwoLabel.text = "\(cardTwoInt)"
         cardThreeLabel.text = "\(cardThreeInt)"
         cardFourLabel.text = "\(cardFourInt)"
-        
-        soundPlayer.play()
     }
 }
