@@ -48,22 +48,27 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sml-Fh-V0s">
-                                <rect key="frame" x="150" y="530" width="75" height="57"/>
+                                <rect key="frame" x="150" y="453" width="75" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYG-by-klq"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BQD-AY-nWd">
+                                <rect key="frame" x="291" y="616" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sml-Fh-V0s" secondAttribute="bottom" constant="80" id="0RY-73-hox"/>
                             <constraint firstItem="zhQ-t6-gqa" firstAttribute="top" secondItem="995-Bj-dFt" secondAttribute="bottom" constant="8" id="NzE-K7-vk2"/>
                             <constraint firstItem="995-Bj-dFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O6o-pG-2sn"/>
                             <constraint firstItem="995-Bj-dFt" firstAttribute="top" secondItem="m1e-vE-2pS" secondAttribute="bottom" constant="8" id="Qdl-Y4-8pZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BQD-AY-nWd" secondAttribute="bottom" constant="20" id="Whh-7v-zxV"/>
                             <constraint firstItem="m1e-vE-2pS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="d7W-8u-cXx"/>
                             <constraint firstItem="m1e-vE-2pS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eK3-j7-lpE"/>
+                            <constraint firstItem="BQD-AY-nWd" firstAttribute="top" secondItem="sml-Fh-V0s" secondAttribute="bottom" constant="106" id="gMx-7r-Ztx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BQD-AY-nWd" secondAttribute="trailing" constant="35" id="h2V-0U-2Dh"/>
                             <constraint firstItem="6yh-wg-9D4" firstAttribute="top" secondItem="zhQ-t6-gqa" secondAttribute="bottom" constant="8" id="jub-cA-yA7"/>
                             <constraint firstItem="sml-Fh-V0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mgf-6n-1OE"/>
                             <constraint firstItem="zhQ-t6-gqa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="okz-O7-vpL"/>
@@ -76,6 +81,7 @@
                         <outlet property="cardOneLabel" destination="t88-yy-YA8" id="Ouk-GB-bqD"/>
                         <outlet property="cardThreeLabel" destination="zhQ-t6-gqa" id="ORc-Jz-p9I"/>
                         <outlet property="cardTwoLabel" destination="995-Bj-dFt" id="iTG-in-03b"/>
+                        <outlet property="soundSwitch" destination="BQD-AY-nWd" id="ZYb-S5-hAE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

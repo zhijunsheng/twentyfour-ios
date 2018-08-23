@@ -12,9 +12,39 @@ class LoopTests: XCTestCase {
     
     // pi = 4 - 4/3 + 4/5 - 4/7 + ...
     func testPi2() {
-        let items = 5
-        let sum = 4 - 4/3 + 4/5 - 4/7 + 4/9
+        //let sum = 4.0 - 4/3 + 4/5 - 4/7 + 4/9 - 4/11 + 4/13 - 4/15
+    
+        // mapping from
+        // 0  1  2  3  4 (i)
+        // to
+        // 1  3  5  7  9 (2 * i + 1 )
+    
+        // to
+        // 1 -3 +5 -7 +9   (pow(-1, i) * (2 * i + 1 ))
+        //
+        
+        let items = 10000 //3.14149265359003
+        var sum = 0.0
+        for i in 0 ..< items {
+            let doubleFromDecimal = NSDecimalNumber(decimal: pow(-1, i)).doubleValue
+
+            let frac = 4.0 / (2.0 * Double(i) + 1.0) * doubleFromDecimal
+            sum = sum + frac
+      
+        }
         print(sum)
+    }
+    
+    func testPi3() {
+        let items = 5000 //3.14149265359003
+        var sum = 0.0
+        var bottom = 1.0
+        for i in 0 ..< items {
+            sum = sum + 4/bottom - 4/(bottom + 2)
+            
+            bottom = bottom + 4
+        }
+   print(sum)
     }
     
     func testPi(){

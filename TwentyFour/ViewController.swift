@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardThreeLabel: UILabel!
     @IBOutlet weak var cardFourLabel: UILabel!
     
+    @IBOutlet weak var soundSwitch: UISwitch!
     var soundPlayer: AVAudioPlayer!
     
     override func viewDidLoad() {
@@ -31,7 +32,16 @@ class ViewController: UIViewController {
     
     @IBAction func nextButtonTapped(_ sender: Any) {
         makeRandomLabels()
-        soundPlayer.play()
+        
+        if soundSwitch.isOn {
+            print("Playing Sound...")
+            soundPlayer.play()
+        }
+        
+        cardOneLabel.alpha = 0.001
+        UIView.animate(withDuration: 1.0) {
+            self.cardOneLabel.alpha = 1.00
+        }
     }
 
     func makeRandomLabels(){
