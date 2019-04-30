@@ -12,7 +12,9 @@
 		36FE240F20A271D000C22601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE240D20A271D000C22601 /* Main.storyboard */; };
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
-		36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE241E20A271D200C22601 /* TwentyFourTests.swift */; };
+		E7059AC22123A48100057BC6 /* LoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7059AC12123A48100057BC6 /* LoopTests.swift */; };
+		E7F3257A2119138B006E92BC /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F325792119138B006E92BC /* open_game.wav */; };
+		E7F3257C211913A1006E92BC /* pick_release.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F3257B211913A1006E92BC /* pick_release.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +36,10 @@
 		36FE241320A271D200C22601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36FE241520A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36FE241E20A271D200C22601 /* TwentyFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyFourTests.swift; sourceTree = "<group>"; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7059AC12123A48100057BC6 /* LoopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopTests.swift; sourceTree = SOURCE_ROOT; };
+		E7F325792119138B006E92BC /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
+		E7F3257B211913A1006E92BC /* pick_release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pick_release.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		36FE240820A271D000C22601 /* TwentyFour */ = {
 			isa = PBXGroup;
 			children = (
+				E7F3257B211913A1006E92BC /* pick_release.wav */,
+				E7F325792119138B006E92BC /* open_game.wav */,
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
 				36FE240D20A271D000C22601 /* Main.storyboard */,
@@ -90,7 +96,7 @@
 		36FE241D20A271D200C22601 /* TwentyFourTests */ = {
 			isa = PBXGroup;
 			children = (
-				36FE241E20A271D200C22601 /* TwentyFourTests.swift */,
+				E7059AC12123A48100057BC6 /* LoopTests.swift */,
 				36FE242020A271D200C22601 /* Info.plist */,
 			);
 			path = TwentyFourTests;
@@ -177,6 +183,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F3257A2119138B006E92BC /* open_game.wav in Resources */,
+				E7F3257C211913A1006E92BC /* pick_release.wav in Resources */,
 				36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */,
 				36FE241120A271D200C22601 /* Assets.xcassets in Resources */,
 				36FE240F20A271D000C22601 /* Main.storyboard in Resources */,
@@ -206,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */,
+				E7059AC22123A48100057BC6 /* LoopTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = 9MBU3899T7;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -377,7 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = 9MBU3899T7;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
