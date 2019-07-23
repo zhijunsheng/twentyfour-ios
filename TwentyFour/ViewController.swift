@@ -10,8 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
     
- 
-   
+    
+    
+    @IBOutlet weak var firstCardLabel: UILabel!
+    
+    @IBAction func buttonTouched(_ sender: Any) {
+        print("hi guys")
+        firstCardLabel.text = "5"
+    }
+    
     
 }
 
