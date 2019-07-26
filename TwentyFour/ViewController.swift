@@ -17,7 +17,7 @@ class ViewController: UIViewController {
 
     @IBAction func buttonTouched(_ sender: Any) {
         let x = arc4random()
-        print("\(x)")
+        
         let smallerX = x % 10
         print("\(smallerX)")
         // what is the remainder of 19 ÷ 5 ?
