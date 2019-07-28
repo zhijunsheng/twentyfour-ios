@@ -17,39 +17,20 @@ class ViewController: UIViewController {
 
     @IBAction func buttonTouched(_ sender: Any) {
         let x = arc4random()
-        
-        let smallerX = x % 10
+        let smallerX = x % 10 + 1
         print("\(smallerX)")
-        // what is the remainder of 19 ÷ 5 ?
-        // / %
-        // 19 % 5 is 4
-        // 95327 % 100 is 27
-        
         firstCardLabel.text = "\(smallerX)"
         
-        
         let y = arc4random()
-        let smallerY = y % 10
+        let smallerY = y % 10 + 1
         secondCardLabel.text = "\(smallerY)"
         
-        
         let z = arc4random()
-        let smallerZ = z % 10
+        let smallerZ = z % 10 + 1
         thirdCardLabel.text = "\(smallerZ)"
         
-        
-        
         let a = arc4random()
-        let smallerA = a % 10
+        let smallerA = a % 10 + 1
         fourthCardLabel.text = "\(smallerA)"
-        
-        
-        
-    }
-    
-    
+   }
 }
-
-
-
-
