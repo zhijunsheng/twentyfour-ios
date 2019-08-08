@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -15,7 +16,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardThree: UILabel!
     @IBOutlet weak var cardFour: UILabel!
     
-    @IBAction func buttonTapped(_ sender: Any) {
+    var soundPlayer: AVAudioPlayer!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let soundFilePath = Bundle.main.path(forResource: "open_game", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: soundFilePath!)
+        soundPlayer = try? AVAudioPlayer(contentsOf: soundURL)
+    }
+    
+    @IBAction func buttonTapped(_ sender: Any){
+        soundPlayer.play()
         
         let cardOneValue = arc4random() % 10 + 1
         cardOne.text = "\(cardOneValue)"
@@ -28,5 +40,7 @@ class ViewController: UIViewController {
         
         let cardFourValue = arc4random() % 10 + 1
         cardFour.text = "\(cardFourValue)"
+        
+        
     }
 }

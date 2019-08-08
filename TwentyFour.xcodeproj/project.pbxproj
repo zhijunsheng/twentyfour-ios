@@ -12,7 +12,8 @@
 		36FE240F20A271D000C22601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE240D20A271D000C22601 /* Main.storyboard */; };
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
-		36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE241E20A271D200C22601 /* TwentyFourTests.swift */; };
+		82DC0FB52122552B00E68F8D /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82DC0FB42122552A00E68F8D /* open_game.wav */; };
+		82DC0FB72122553800E68F8D /* pick_release.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82DC0FB62122553800E68F8D /* pick_release.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		36FE241320A271D200C22601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36FE241520A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36FE241E20A271D200C22601 /* TwentyFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyFourTests.swift; sourceTree = "<group>"; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82DC0FB42122552A00E68F8D /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
+		82DC0FB62122553800E68F8D /* pick_release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pick_release.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 			children = (
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
+				82DC0FB42122552A00E68F8D /* open_game.wav */,
+				82DC0FB62122553800E68F8D /* pick_release.wav */,
 				36FE240D20A271D000C22601 /* Main.storyboard */,
 				36FE241020A271D200C22601 /* Assets.xcassets */,
 				36FE241220A271D200C22601 /* LaunchScreen.storyboard */,
@@ -90,7 +94,6 @@
 		36FE241D20A271D200C22601 /* TwentyFourTests */ = {
 			isa = PBXGroup;
 			children = (
-				36FE241E20A271D200C22601 /* TwentyFourTests.swift */,
 				36FE242020A271D200C22601 /* Info.plist */,
 			);
 			path = TwentyFourTests;
@@ -177,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DC0FB52122552B00E68F8D /* open_game.wav in Resources */,
+				82DC0FB72122553800E68F8D /* pick_release.wav in Resources */,
 				36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */,
 				36FE241120A271D200C22601 /* Assets.xcassets in Resources */,
 				36FE240F20A271D000C22601 /* Main.storyboard in Resources */,
@@ -206,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +363,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = 9MBU3899T7;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,8 +382,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = 9MBU3899T7;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
