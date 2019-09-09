@@ -13,43 +13,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardThreeLabel: UILabel!
     @IBOutlet weak var cardFourLabel: UILabel!
     
-    
     @IBAction func nextHand(_ sender: UIButton) {
         let cardOneRandom = arc4random()
-        print(cardOneRandom)
-        let carOneRandonSmaller = cardOneRandom % 10
-        print(carOneRandonSmaller)
-     
-       
-        
+        let carOneRandonSmaller = cardOneRandom % 10 + 1
         cardOneLabel.text = "\(carOneRandonSmaller)"
         
         let cardTwoRandom = arc4random()
-        print(cardTwoRandom)
-        let cardTwoRandomSmaller = cardTwoRandom % 10
-        print(cardTwoRandomSmaller)
-        
+        let cardTwoRandomSmaller = cardTwoRandom % 10 + 1
         cardTwoLabel.text = "\(cardTwoRandomSmaller)"
         
         let cardThreeRandom = arc4random()
-        print(cardThreeRandom)
-        let cardThreeRandomSmaller = cardThreeRandom % 10
-        print(cardThreeRandomSmaller)
+        let cardThreeRandomSmaller = cardThreeRandom % 10 + 1
         cardThreeLabel.text = "\(cardThreeRandomSmaller)"
         
         let cardFourRandom = arc4random()
-        print(cardFourRandom)
-        let cardFourRandomSmaller = cardFourRandom % 10
-        print(cardFourRandomSmaller)
+        let cardFourRandomSmaller = cardFourRandom % 10 + 1
         cardFourLabel.text = "\(cardFourRandomSmaller)"
-        
-       
-        
     }
-    
-    
 }
-
-
-
-
