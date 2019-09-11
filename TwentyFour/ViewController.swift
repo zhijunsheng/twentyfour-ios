@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cardOneLabel: UILabel!
     @IBOutlet weak var cardTwoLabel: UILabel!
+    @IBOutlet weak var cardThreeLabel: UILabel!
+    
+    @IBOutlet weak var cardFourLabel: UILabel!
     
     @IBAction func deal(_ sender: Any) {
         
@@ -20,6 +23,12 @@ class ViewController: UIViewController {
         
         let cardTwoNum = arc4random() % 10
         cardTwoLabel.text = "\(cardTwoNum)"
+        
+        let cardThreeNum = arc4random() % 10
+        cardThreeLabel.text = "\(cardThreeNum)"
+        
+        let cardFourNum = arc4random() % 10
+        cardFourLabel.text = "\(cardFourNum)"
         
         
     }
