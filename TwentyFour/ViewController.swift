@@ -10,12 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var cardOneLabel: UILabel!
+    @IBOutlet weak var cardTwoLabel: UILabel!
+    
+    @IBAction func deal(_ sender: Any) {
+        
+        let cardOneNum = arc4random() % 10
+        cardOneLabel.text = "\(cardOneNum)"
+        
+        let cardTwoNum = arc4random() % 10
+        cardTwoLabel.text = "\(cardTwoNum)"
+        
+        
+    }
+
     
     
-   
     
+    
+
+
 }
-
-
-
-
