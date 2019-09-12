@@ -8,13 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController { // 7 9 7 4
     
+    @IBOutlet weak var cardOneLabel: UILabel!
+    @IBOutlet weak var cardTwoLabel: UILabel!
+    @IBOutlet weak var cardThreeLabel: UILabel!
+    @IBOutlet weak var cardFourLabel: UILabel!
     
-    // 4 6 2 9
-    // 1 1 1 1
-    // 4 * 2 * (9 - 6)
    
+    @IBAction func nextTapped(_ sender: UIButton) {
+        
+        // 48498 % 1000 = ?
+        let cardOneNumber = arc4random() % 10
+        let cardTwoNumber = arc4random() % 10
+        let cardThreeNumber = arc4random() % 10
+        let cardFourNumber = arc4random() % 10
+        
+        cardOneLabel.text = "\(cardOneNumber)"
+        cardTwoLabel.text = "\(cardTwoNumber)"
+        cardThreeLabel.text = "\(cardThreeNumber)"
+        cardFourLabel.text = "\(cardFourNumber)"
+    }
     
 }
 
