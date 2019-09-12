@@ -11,7 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    
+    // 4 6 2 9
+    // 1 1 1 1
+    // 4 * 2 * (9 - 6)
    
     
 }
