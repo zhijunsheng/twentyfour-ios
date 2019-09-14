@@ -18,25 +18,19 @@ class ViewController: UIViewController {
     
     @IBAction func deal(_ sender: Any) {
         
-        let cardOneNum = arc4random() % 10
+        let cardOneNum = arc4random() % 10 + 1
         cardOneLabel.text = "\(cardOneNum)"
         
-        let cardTwoNum = arc4random() % 10
+        let cardTwoNum = arc4random() % 10 + 1
         cardTwoLabel.text = "\(cardTwoNum)"
         
-        let cardThreeNum = arc4random() % 10
+        let cardThreeNum = arc4random() % 10 + 1
         cardThreeLabel.text = "\(cardThreeNum)"
         
-        let cardFourNum = arc4random() % 10
+        let cardFourNum = arc4random() % 10 + 1
         cardFourLabel.text = "\(cardFourNum)"
         
         
     }
-
-    
-    
-    
-    
-
 
 }
