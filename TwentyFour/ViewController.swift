@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var cardOneLabel: UILabel!
     
+    @IBOutlet var cardTwoLabel: UILabel!
     
-   
+    @IBOutlet var cardThreeLabel: UILabel!
+    
+    @IBOutlet var cardFourLabel: UILabel!
+    
+    @IBAction func burtonTapped(_ sender: UIButton) {
+        print("hsuahciewjahfajkfha")
+    }
     
 }
 

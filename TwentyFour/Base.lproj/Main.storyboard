@@ -51,6 +51,9 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="burtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EGJ-6B-e6g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,6 +73,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardFourLabel" destination="xDi-1H-0r4" id="jhu-up-msy"/>
+                        <outlet property="cardOneLabel" destination="aaH-nY-GLv" id="K0J-Uy-dal"/>
+                        <outlet property="cardThreeLabel" destination="7QP-E9-OEI" id="7wQ-fr-voe"/>
+                        <outlet property="cardTwoLabel" destination="8fJ-uO-hzo" id="j3E-yX-8zL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
