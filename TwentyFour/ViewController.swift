@@ -18,28 +18,29 @@ class ViewController: UIViewController {
     
     @IBOutlet var cardFourLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        updateLabels()
+    }
     
     @IBAction func burttonTapped(_ sender: UIButton) {
+        updateLabels()
+    }
+    
+    func updateLabels() {
         let number1 = arc4random()
         let number2 = arc4random()
         let number3 = arc4random()
         let number4 = arc4random()
-        
         let numberSmall1 = number1 % 10 + 1
         let numberSmall2 = number2 % 10 + 1
         let numberSmall3 = number3 % 10 + 1
         let numberSmall4 = number4 % 10 + 1
-        
-        cardOneLabel.text = "\(numberSmall1 )"
+        cardOneLabel.text = "\(numberSmall1)"
         cardTwoLabel.text = "\(numberSmall2)"
-        cardThreeLabel.text = "\(numberSmall3 )"
+        cardThreeLabel.text = "\(numberSmall3)"
         cardFourLabel.text = "\(numberSmall4)"
-          print("hsuahciewjahfajkfha")
     }
-    
-    
-    
-  
 }
 
 
