@@ -12,8 +12,8 @@
 		36FE240F20A271D000C22601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE240D20A271D000C22601 /* Main.storyboard */; };
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
-		B41990D422FB01EF000ABE81 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41990D322FB01EF000ABE81 /* BoardView.swift */; };
 		B41990D62306E4F6000ABE81 /* LoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41990D52306E4F6000ABE81 /* LoopTests.swift */; };
+		EC488A8E2335060E002BFE75 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41990D322FB01EF000ABE81 /* BoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,7 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41990D422FB01EF000ABE81 /* BoardView.swift in Sources */,
+				EC488A8E2335060E002BFE75 /* BoardView.swift in Sources */,
 				36FE240C20A271D000C22601 /* ViewController.swift in Sources */,
 				36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */,
 			);
@@ -364,13 +364,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = X65TJBZ3DW;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.TwentyFour;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambert.TwentyFour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -382,13 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = X65TJBZ3DW;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.TwentyFour;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambert.TwentyFour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

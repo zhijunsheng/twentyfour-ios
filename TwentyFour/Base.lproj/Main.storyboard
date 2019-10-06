@@ -38,8 +38,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppb-md-xOP">
-                                <rect key="frame" x="20" y="596.5" width="794" height="180.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <rect key="frame" x="20" y="442" width="794" height="129"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
                                 <color key="textColor" red="0.066578375547367452" green="0.0" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
@@ -49,26 +49,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgh-Vt-wsB">
-                                <rect key="frame" x="16" y="34" width="802" height="179.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <rect key="frame" x="16" y="34" width="802" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
                                 <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq2-kx-ves">
-                                <rect key="frame" x="16" y="221.5" width="802" height="179.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <rect key="frame" x="16" y="170" width="802" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
                                 <color key="textColor" red="0.0" green="0.99143940210000003" blue="1" alpha="0.40199593321917809" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px9-KO-E69">
-                                <rect key="frame" x="16" y="409" width="802" height="179.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <rect key="frame" x="16" y="306" width="802" height="128"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
                                 <color key="textColor" red="0.97803547074544805" green="1" blue="0.8092855106239949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-Nr-beL">
-                                <rect key="frame" x="20" y="785" width="794" height="192"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                                <rect key="frame" x="20" y="579" width="794" height="132"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                 <state key="normal" title="next">
                                     <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
