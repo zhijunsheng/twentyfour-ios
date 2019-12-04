@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
     @IBOutlet weak var card1: UILabel!
     @IBOutlet weak var card2: UILabel!
     @IBOutlet weak var card3: UILabel!
     @IBOutlet weak var card4: UILabel!
+    @IBOutlet weak var answerTextField: UITextField!
     
     @IBAction func buttonTouched(_ sender: Any) {
         let x = arc4random()
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
         let smallerA = a % 10 + 1
         card4.text = "\(smallerA)"
         
-        
+        answerTextField.text = ""
     }
     
 }
