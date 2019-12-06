@@ -15,7 +15,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardThree: UILabel!
     @IBOutlet weak var cardFour: UILabel!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        random()
+    }
+    
     @IBAction func deal(_ sender: Any) {
+        random()
+    }
+    
+    func random() {
         let number1 = arc4random() % 10 + 1
         cardOne.text = "\(number1)"
         
@@ -27,13 +36,5 @@ class ViewController: UIViewController {
         
         let number4 = arc4random() % 10 + 1
         cardFour.text = "\(number4)"
-        
-        
     }
-    
-
 }
-
-
-
-
