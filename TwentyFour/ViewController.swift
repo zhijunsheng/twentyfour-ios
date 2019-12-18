@@ -15,6 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var card4: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        card1.text = "\(arc4random() % 10 + 1)"
+        card2.text = "\(arc4random() % 10 + 1) "
+        card3.text = "\(arc4random() % 10 + 1)"
+        card4.text = "\(arc4random() % 10 + 1)"
+    }
+    
     @IBAction func buttonTouched(_ sender: Any) {
         let x = arc4random()
         let smallerX = x % 10 + 1
