@@ -75,6 +75,21 @@ class ViewController: UIViewController {
         toughLabel3.text = thirdCardLabel.text
         toughLabel4.text = fourthCardLabel.text
         
+        let x = arc4random()
+        let smallerX = x % 5 + 1
+        firstCardLabel.text = "\(smallerX)"
+     
+        let y = arc4random()
+        let smallerY = y % 10 + 1
+        secondCardLabel.text = "\(smallerY)"
+        
+        let z = arc4random()
+        let smallerZ = z % 10 + 1
+        thirdCardLabel.text = "\(smallerZ)"
+        
+        let a = arc4random()
+        let smallerA = a % 10 + 1
+        fourthCardLabel.text = "\(smallerA)"
     }
     
 }
