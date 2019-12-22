@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCardLabel: UILabel!
     @IBOutlet weak var thirdCardLabel: UILabel!
     @IBOutlet weak var fourthCardLabel: UILabel!
+    @IBOutlet weak var toughLabel: UILabel!
+    @IBOutlet weak var toughLabel2: UILabel!
+    @IBOutlet weak var toughLabel3: UILabel!
+    @IBOutlet weak var toughLabel4: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,9 +51,9 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func buttonTouched(_ sender: Any) {
+    @IBAction func shuffle(_ sender: Any) {
         let x = arc4random()
-        let smallerX = x % 10 + 1
+        let smallerX = x % 5 + 1
         firstCardLabel.text = "\(smallerX)"
         
         let y = arc4random()
@@ -63,5 +67,14 @@ class ViewController: UIViewController {
         let a = arc4random()
         let smallerA = a % 10 + 1
         fourthCardLabel.text = "\(smallerA)"
-   }
+    }
+    
+    @IBAction func skip(_ sender: UIButton) {
+        toughLabel.text = firstCardLabel.text 
+        toughLabel2.text = secondCardLabel.text
+        toughLabel3.text = thirdCardLabel.text
+        toughLabel4.text = fourthCardLabel.text
+        
+    }
+    
 }
