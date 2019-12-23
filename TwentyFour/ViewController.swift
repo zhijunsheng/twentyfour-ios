@@ -33,12 +33,12 @@ class ViewController: UIViewController {
         
         let e = arc4random()
         let smallerE = e % 10 + 1
-        fourthCardLabel.text = "\(smallerE)"        
+        fourthCardLabel.text = "\(smallerE)"
     }
     
     @IBAction func shuffle(_ sender: Any) {
         let x = arc4random()
-        let smallerX = x % 5 + 1
+        let smallerX = x % 10 + 1
         firstCardLabel.text = "\(smallerX)"
         
         let y = arc4random()
