@@ -19,60 +19,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let b = arc4random()
-        let smallerB = b % 10 + 1
-        firstCardLabel.text = "\(smallerB)"
-        
-        let c = arc4random()
-        let smallerC = c % 10 + 1
-        secondCardLabel.text = "\(smallerC)"
-        
-        let d = arc4random()
-        let smallerD = d % 10 + 1
-        thirdCardLabel.text = "\(smallerD)"
-        
-        let e = arc4random()
-        let smallerE = e % 10 + 1
-        fourthCardLabel.text = "\(smallerE)"
+        set4CardsRandom()
     }
     
     @IBAction func shuffle(_ sender: Any) {
-        let x = arc4random()
-        let smallerX = x % 10 + 1
-        firstCardLabel.text = "\(smallerX)"
-        
-        let y = arc4random()
-        let smallerY = y % 10 + 1
-        secondCardLabel.text = "\(smallerY)"
-        
-        let z = arc4random()
-        let smallerZ = z % 10 + 1
-        thirdCardLabel.text = "\(smallerZ)"
-        
-        let a = arc4random()
-        let smallerA = a % 10 + 1
-        fourthCardLabel.text = "\(smallerA)"
+        set4CardsRandom()
     }
     
     @IBAction func skip(_ sender: UIButton) {
-        
         toughLabel.text = "\(firstCardLabel.text!)   \(secondCardLabel.text!)   \(thirdCardLabel.text!)   \(fourthCardLabel.text!)"
         
-        let x = arc4random()
-        let smallerX = x % 5 + 1
-        firstCardLabel.text = "\(smallerX)"
-     
-        let y = arc4random()
-        let smallerY = y % 10 + 1
-        secondCardLabel.text = "\(smallerY)"
+        set4CardsRandom()
+    }
+    
+    func set4CardsRandom()  {
+        let b = arc4random()
+        let smallerB = b % 13 + 1
+        firstCardLabel.text = "\(smallerB)"
         
-        let z = arc4random()
-        let smallerZ = z % 10 + 1
-        thirdCardLabel.text = "\(smallerZ)"
+        let c = arc4random()
+        let smallerC = c % 13 + 1
+        secondCardLabel.text = "\(smallerC)"
         
-        let a = arc4random()
-        let smallerA = a % 10 + 1
-        fourthCardLabel.text = "\(smallerA)"
+        let d = arc4random()
+        let smallerD = d % 13 + 1
+        thirdCardLabel.text = "\(smallerD)"
+        
+        let e = arc4random()
+        let smallerE = e % 13 + 1
+        fourthCardLabel.text = "\(smallerE)"
     }
     
 }
