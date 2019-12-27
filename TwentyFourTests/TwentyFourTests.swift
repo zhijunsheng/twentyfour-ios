@@ -11,6 +11,22 @@ import XCTest
 
 class TwentyFourTests: XCTestCase {
     
+    func testPrintHellos() {
+
+        printFourHellos()
+        printFourHellos()
+        printFourHellos()
+        printFourHellos()
+        printFourHellos()
+    }
+    
+    func printFourHellos() {
+        print("hello 1")
+        print("hello a")
+        print("hello 2")
+        print("hello b")
+    }
+    
     func testTwentyFour(){
         
         let x = twentyFour(a: 1.0, b: 5.0, c: 3, d: 1)
