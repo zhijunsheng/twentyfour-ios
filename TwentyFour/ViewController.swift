@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var card3: UILabel!
     @IBOutlet weak var card4: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
+    @IBOutlet weak var saveCards: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,13 @@ class ViewController: UIViewController {
         
         answerTextField.text = ""
     }
-
+    
+    
+    @IBAction func saveCards(_ sender: Any) {
+        saveCards.text = "\(card1.text!) \(card2.text!) \(card4.text!) \(card3.text!)"
+        
+    }
+    
     func changeFourCards() {
         card1.text = "\(arc4random() % 10 + 1)"
         card2.text = "\(arc4random() % 10 + 1)"
@@ -34,4 +41,7 @@ class ViewController: UIViewController {
         card4.text = "\(arc4random() % 10 + 1)"
     }
 }
+
+
+
 
