@@ -33,24 +33,26 @@ class ViewController: UIViewController {
     }
     
     func set4CardsRandom()  {
-        let b = arc4random()
-        let smallerB = b % 13 + 1
+        let max: Int = 13
+        
+        let b = Int(arc4random())
+        let smallerB = b % max + 1
         firstCardLabel.text = "\(smallerB)"
         
-        let c = arc4random()
-        let smallerC = c % 13 + 1
+        let c = Int(arc4random())
+        let smallerC = c % max + 1
         secondCardLabel.text = "\(smallerC)"
         
-        let d = arc4random()
-        let smallerD = d % 13 + 1
+        let d = Int(arc4random())
+        let smallerD = d % max + 1
         thirdCardLabel.text = "\(smallerD)"
         
-        let e = arc4random()
-        let smallerE = e % 13 + 1
+        let e = Int(arc4random())
+        let smallerE = e % max + 1
         fourthCardLabel.text = "\(smallerE)"
     }
-    
-}
+
+ }
 
 
 
