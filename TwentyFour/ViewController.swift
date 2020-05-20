@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var card1Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
+    
+    @IBAction func pressButton(_ sender: Any) {
+        let card1Raw = arc4random() % 10 + 1
+        
+        card1Label.text = "\(card1Raw)"
+    }
+    
+    
 }
 
 
