@@ -30,21 +30,10 @@ class ViewController: UIViewController {
         card2Label.text = "\(card2Raw)"
         card3Label.text = "\(card3Raw)"
         card4Label.text = "\(card4Raw)"
-        
-        s.push(n: 1)
-        s.push(n: 2)
-        s.push(n: 3)
-        print(s.pop())
-        print(s.pop())
-        print(s.pop())
-        s.push(n: 4)
-        s.push(n: 5)
-        print(s.pop())
-        print(s.pop())
     }
     
     
-    @IBAction func pressButton(_ sender: Any) {
+    @IBAction func playAgain(_ sender: Any) {
         let card1Raw = arc4random() % 10 + 1
         let card2Raw = arc4random() % 10 + 1
         let card3Raw = arc4random() % 10 + 1
@@ -53,11 +42,12 @@ class ViewController: UIViewController {
         card2Label.text = "\(card2Raw)"
         card3Label.text = "\(card3Raw)"
         card4Label.text = "\(card4Raw)"
+        answerLabel.text = ""
     }
     
     @IBAction func checkAnswer(_ sender: Any) {
         // 10 3 +
-        guard let answer = answerTextField.text else {
+        guard let answer = answerTextField.text, !answer.isEmpty else {
             return
         }
         // next we'lol d
@@ -66,11 +56,38 @@ class ViewController: UIViewController {
         for element in elements {
             if element == "+" {
                 s.push(n: s.pop()+s.pop())
+            } else if element == "-" {
+                s.push(n: -s.pop()+s.pop())
+            } else if element == "*" {
+                s.push(n: s.pop()*s.pop())
+            } else if element == "/" {
+                let divisor = s.pop()
+                let dividend = s.pop()
+                s.push(n: dividend/divisor)
             } else {
-                s.push(n: Int(element)!)
+                if notCheating(num: element) {
+                    s.push(n: Int(element)!)
+                } else {
+                    answerLabel.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    answerLabel.text = "Stop cheating!"
+                    return
+                }
             }
         }
-        print(s.pop())
+        
+        if s.pop() == 24 {
+            answerLabel.textColor = #colorLiteral(red: 0, green: 0.7266386901, blue: 0.1631791511, alpha: 1)
+            answerLabel.text = "Correct"
+        } else {
+            answerLabel.textColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
+            answerLabel.text = "Incorrect"
+        }
+    }
+    
+    func notCheating(num: String) -> Bool {
+        return num == card1Label.text || num == card2Label.text || num == card3Label.text || num == card4Label.text
+            
+        
     }
     
     
