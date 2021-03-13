@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var s = Stack()
+    @IBOutlet weak var answerTextField: UITextField!
+    @IBOutlet weak var answerLabel: UILabel!
+    
     
     @IBOutlet weak var card1Label: UILabel!
     @IBOutlet weak var card2Label: UILabel!
@@ -26,6 +30,17 @@ class ViewController: UIViewController {
         card2Label.text = "\(card2Raw)"
         card3Label.text = "\(card3Raw)"
         card4Label.text = "\(card4Raw)"
+        
+        s.push(n: 1)
+        s.push(n: 2)
+        s.push(n: 3)
+        print(s.pop())
+        print(s.pop())
+        print(s.pop())
+        s.push(n: 4)
+        s.push(n: 5)
+        print(s.pop())
+        print(s.pop())
     }
     
     
@@ -40,9 +55,23 @@ class ViewController: UIViewController {
         card4Label.text = "\(card4Raw)"
     }
     
+    @IBAction func checkAnswer(_ sender: Any) {
+        // 10 3 +
+        guard let answer = answerTextField.text else {
+            return
+        }
+        // next we'lol d
+        // "10 3 +" => ["10", "3", "+"]
+        let elements = answer.components(separatedBy: " ")
+        for element in elements {
+            if element == "+" {
+                s.push(n: s.pop()+s.pop())
+            } else {
+                s.push(n: Int(element)!)
+            }
+        }
+        print(s.pop())
+    }
+    
     
 }
-
-
-
-
