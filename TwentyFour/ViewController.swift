@@ -23,19 +23,20 @@ class ViewController: UIViewController {
     
     @IBAction func nextCards(_ sender: Any) {
         let random1 = arc4random()
-        card1.text = "\(random1 % 10)"
+        card1.text = "\(random1 % 11)"
         
         // code for card2
         let random2 = arc4random()
-        card2.text = "\(random2 % 10) "
+        card2.text = "\(random2 % 11) "
         // code for card3
         let random3 = arc4random()
-        card3.text = "\(random3 % 10)"
+        card3.text = "\(random3 % 11)"
         let random4 = arc4random()
-        card4.text = "\(random4 % 10)"
+        card4.text = "\(random4 % 11)"
         
         answerTextField.text = ""
     }
     
 }
   
+
