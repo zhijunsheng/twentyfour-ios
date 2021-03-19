@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet var card3: UILabel!
     @IBOutlet var card4: UILabel!
     
+    @IBOutlet var answerTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -32,18 +34,8 @@ class ViewController: UIViewController {
         let random4 = arc4random()
         card4.text = "\(random4 % 10)"
         
-        // 7 / 2 r
-        // 17 / 5
-        // 17 / 10 r 7
-        // 23 / 10 r 3
-        // 120 / 20 r 0
-        // 120 / 10 r 0
-        // 120 / 100 r 20
-        // 23341120 / 100 r 20
+        answerTextField.text = ""
     }
     
 }
-
-   
-// (9 - 2) * 4 - 4 = 24
-
+  
