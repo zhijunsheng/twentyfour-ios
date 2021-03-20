@@ -2,6 +2,7 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    var s = Stack()
     
     @IBOutlet weak var cardOne: UILabel!
     @IBOutlet weak var cardTwo: UILabel!
@@ -18,8 +19,19 @@ class ViewController: UIViewController {
         soundPlayer = try? AVAudioPlayer(contentsOf: url)
         dealButton.isEnabled = false
         checkSwitch.isOn = false
+        
+        s.push(n: 9)
+        s.push(n: 8)
+        s.push(n: 7)
+        s.push(n: 6)
+        s.push(n: 5)
+        print(s.pop())
+        print(s.pop())
+        print(s.pop())
+        print(s.pop())
+        print(s.pop())
     }
-    
+    // It's a lcb
     @IBAction func checkMath(_ sender: UISwitch) {
         if sender.isOn {
             dealButton.isEnabled = true

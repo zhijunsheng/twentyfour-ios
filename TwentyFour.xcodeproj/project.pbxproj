@@ -13,6 +13,7 @@
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
 		E7059AC22123A48100057BC6 /* LoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7059AC12123A48100057BC6 /* LoopTests.swift */; };
+		E78DEAA725FC540D0065C490 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DEAA625FC540D0065C490 /* Stack.swift */; };
 		E7C79046227883B10038B7DA /* GoldbachThinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C79045227883B10038B7DA /* GoldbachThinkTests.swift */; };
 		E7F3257A2119138B006E92BC /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F325792119138B006E92BC /* open_game.wav */; };
 		E7F3257C211913A1006E92BC /* pick_release.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F3257B211913A1006E92BC /* pick_release.wav */; };
@@ -39,6 +40,8 @@
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7059AC12123A48100057BC6 /* LoopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopTests.swift; sourceTree = SOURCE_ROOT; };
+		E78DEAA625FC540D0065C490 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		E78DEAA825FD9EF10065C490 /* TwentyFour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwentyFour-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7C79045227883B10038B7DA /* GoldbachThinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldbachThinkTests.swift; sourceTree = "<group>"; };
 		E7F325792119138B006E92BC /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
 		E7F3257B211913A1006E92BC /* pick_release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pick_release.wav; sourceTree = "<group>"; };
@@ -88,9 +91,11 @@
 				36FE240D20A271D000C22601 /* Main.storyboard */,
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
+				E78DEAA625FC540D0065C490 /* Stack.swift */,
 				36FE241020A271D200C22601 /* Assets.xcassets */,
 				36FE241220A271D200C22601 /* LaunchScreen.storyboard */,
 				36FE241520A271D200C22601 /* Info.plist */,
+				E78DEAA825FD9EF10065C490 /* TwentyFour-Bridging-Header.h */,
 			);
 			path = TwentyFour;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 				TargetAttributes = {
 					36FE240520A271D000C22601 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1120;
 					};
 					36FE241920A271D200C22601 = {
 						CreatedOnToolsVersion = 9.3;
@@ -209,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FE240C20A271D000C22601 /* ViewController.swift in Sources */,
+				E78DEAA725FC540D0065C490 /* Stack.swift in Sources */,
 				36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CA9U5VXN;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
@@ -379,6 +387,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rrh2.TwentyFour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwentyFour/TwentyFour-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -388,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 93CA9U5VXN;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
@@ -397,6 +408,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rrh2.TwentyFour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwentyFour/TwentyFour-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
