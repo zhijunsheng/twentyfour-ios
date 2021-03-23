@@ -19,6 +19,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let random1 = arc4random()
+        card1.text = "\(random1 % 11)"
+        
+        let random2 = arc4random()
+        card2.text = "\(random2 % 11) "
+        
+        let random3 = arc4random()
+        card3.text = "\(random3 % 11)"
+        
+        let random4 = arc4random()
+        card4.text = "\(random4 % 11)"
     }
     
     @IBAction func nextCards(_ sender: Any) {
@@ -28,9 +40,10 @@ class ViewController: UIViewController {
         // code for card2
         let random2 = arc4random()
         card2.text = "\(random2 % 11) "
-        // code for card3
+        
         let random3 = arc4random()
         card3.text = "\(random3 % 11)"
+        
         let random4 = arc4random()
         card4.text = "\(random4 % 11)"
         
