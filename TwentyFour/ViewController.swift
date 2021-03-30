@@ -21,31 +21,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let random1 = arc4random()
-        card1.text = "\(random1 % 11)"
+        card1.text = "\(random1 % 10 + 1)"
         
         let random2 = arc4random()
-        card2.text = "\(random2 % 11) "
+        card2.text = "\(random2 % 10 + 1) "
         
         let random3 = arc4random()
-        card3.text = "\(random3 % 11)"
+        card3.text = "\(random3 % 10 + 1)"
         
         let random4 = arc4random()
-        card4.text = "\(random4 % 11)"
+        card4.text = "\(random4 % 10 + 1)"
     }
     
     @IBAction func nextCards(_ sender: Any) {
         let random1 = arc4random()
-        card1.text = "\(random1 % 11)"
+        card1.text = "\(random1 % 10 + 1)"
         
         // code for card2
         let random2 = arc4random()
-        card2.text = "\(random2 % 11) "
+        card2.text = "\(random2 % 10 + 1) "
         
         let random3 = arc4random()
-        card3.text = "\(random3 % 11)"
+        card3.text = "\(random3 % 10 + 1)"
         
         let random4 = arc4random()
-        card4.text = "\(random4 % 11)"
+        card4.text = "\(random4 % 10 + 1)"
         
         answerTextField.text = ""
     }
