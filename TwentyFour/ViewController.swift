@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var textBox: UITextField!
     @IBOutlet var cardOneLabel: UILabel!
     
     @IBOutlet var cardTwoLabel: UILabel!
@@ -18,8 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet var cardFourLabel: UILabel!
     
-    @IBAction func burtonTapped(_ sender: UIButton) {
-        print("hsuahciewjahfajkfha")
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
         
         let number1 = arc4random()
         let number2 = arc4random()
@@ -35,6 +36,8 @@ class ViewController: UIViewController {
         cardTwoLabel.text = "\(numberSmall2)"
         cardThreeLabel.text = "\(numberSmall3 )"
         cardFourLabel.text = "\(numberSmall4)"
+        
+        textBox.text = ""
     }
     
 }
