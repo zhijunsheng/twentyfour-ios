@@ -62,11 +62,6 @@
                                     <constraint firstAttribute="width" constant="300" id="h3r-uq-xe4"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-MB-rV6">
-                                <rect key="frame" x="20" y="0.0" width="728" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b7w-zM-yW5">
                                 <rect key="frame" x="359.5" y="593.5" width="51" height="31"/>
                                 <connections>
@@ -80,7 +75,15 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
                                 <state key="normal" title="check"/>
+                                <connections>
+                                    <action selector="checkStyle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8l-Re-2A7"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y4x-MB-rV6">
+                                <rect key="frame" x="20" y="0.0" width="728" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -123,6 +126,7 @@
                         <outlet property="cardTwo" destination="uyW-wo-jRs" id="Wlj-SF-h5C"/>
                         <outlet property="checkSwitch" destination="b7w-zM-yW5" id="j5l-dN-SPu"/>
                         <outlet property="dealButton" destination="lXN-rb-vMv" id="T7X-3k-2AI"/>
+                        <outlet property="mthStyle" destination="Y4x-MB-rV6" id="kpN-8J-KHD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,27 +1,17 @@
 import Foundation
 
 struct Stack {
-    var arrA: [Int] = []
-    var non: Int = 0
+    private var arrA: [Int] = []
     
     mutating func push(n: Int) {
-        arrA.insert(n, at: non) // [9, 0, 0, 0, 0]
-        non += 1
+        arrA.append(n)
     }
     
     mutating func pop() -> Int {
-        non -= 1
-        return arrA[non]
+        return arrA.removeLast()
+    }
+    
+    func isEmpty() -> Bool {
+        return arrA.count == 0
     }
 }
-
-// [23, 4, 9],
-// 8 - (7 + (7 / 9 + 1))
-
-/*
- 
- let a1 = "8 - (7 + (7 / 9 + 1))"
- let a2Arr = a1.componentsSeperated(by: " ")
- a2Arr => ["8", "-", "(", ...]
-
- */
