@@ -12,6 +12,8 @@
 		36FE240F20A271D000C22601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE240D20A271D000C22601 /* Main.storyboard */; };
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
+		822D65AF25FDA1F500EB9752 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D65AE25FDA1F500EB9752 /* Stack.swift */; };
+		82AE341226AB984F00CBE312 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE341126AB984F00CBE312 /* StackTests.swift */; };
 		82DC0FB52122552B00E68F8D /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82DC0FB42122552A00E68F8D /* open_game.wav */; };
 		82DC0FB72122553800E68F8D /* pick_release.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82DC0FB62122553800E68F8D /* pick_release.wav */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		36FE241520A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822D65AE25FDA1F500EB9752 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		82AE341126AB984F00CBE312 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		82DC0FB42122552A00E68F8D /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
 		82DC0FB62122553800E68F8D /* pick_release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pick_release.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +85,7 @@
 			children = (
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
+				822D65AE25FDA1F500EB9752 /* Stack.swift */,
 				82DC0FB42122552A00E68F8D /* open_game.wav */,
 				82DC0FB62122553800E68F8D /* pick_release.wav */,
 				36FE240D20A271D000C22601 /* Main.storyboard */,
@@ -95,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				36FE242020A271D200C22601 /* Info.plist */,
+				82AE341126AB984F00CBE312 /* StackTests.swift */,
 			);
 			path = TwentyFourTests;
 			sourceTree = "<group>";
@@ -152,6 +158,7 @@
 					};
 					36FE241920A271D200C22601 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1240;
 						TestTargetID = 36FE240520A271D000C22601;
 					};
 				};
@@ -203,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FE240C20A271D000C22601 /* ViewController.swift in Sources */,
+				822D65AF25FDA1F500EB9752 /* Stack.swift in Sources */,
 				36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82AE341226AB984F00CBE312 /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +410,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8B74FCZCC;
 				INFOPLIST_FILE = TwentyFourTests/Info.plist;
@@ -411,6 +421,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.TwentyFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwentyFour.app/TwentyFour";
@@ -422,6 +433,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8B74FCZCC;
 				INFOPLIST_FILE = TwentyFourTests/Info.plist;
