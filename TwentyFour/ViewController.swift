@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         card3Label.text = "\(card3Raw)"
         card4Label.text = "\(card4Raw)"
         answerLabel.text = ""
+        answerTextField.text = ""
     }
     
     @IBAction func checkAnswer(_ sender: Any) {
@@ -92,3 +93,6 @@ class ViewController: UIViewController {
     
     
 }
+
+// int => float or double
+// we might get 23.99999999 or 24.000000001 instead of 24.0

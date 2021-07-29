@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E39684A25FACE5D00AB80F7 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39684925FACE5D00AB80F7 /* Stack.swift */; };
+		1EBAB09F2697A38C00594B00 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EBAB09E2697A38C00594B00 /* StackTests.swift */; };
 		36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE240920A271D000C22601 /* AppDelegate.swift */; };
 		36FE240C20A271D000C22601 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE240B20A271D000C22601 /* ViewController.swift */; };
 		36FE240F20A271D000C22601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE240D20A271D000C22601 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		1E39684925FACE5D00AB80F7 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		1EBAB09E2697A38C00594B00 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		36FE240620A271D000C22601 /* TwentyFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwentyFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FE240920A271D000C22601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36FE240B20A271D000C22601 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				36FE242020A271D200C22601 /* Info.plist */,
+				1EBAB09E2697A38C00594B00 /* StackTests.swift */,
 			);
 			path = TwentyFourTests;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					};
 					36FE241920A271D200C22601 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1250;
 						TestTargetID = 36FE240520A271D000C22601;
 					};
 				};
@@ -207,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EBAB09F2697A38C00594B00 /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +400,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8B74FCZCC;
 				INFOPLIST_FILE = TwentyFourTests/Info.plist;
@@ -405,6 +411,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goldthumb.TwentyFourTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwentyFour.app/TwentyFour";
@@ -416,6 +423,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8B74FCZCC;
 				INFOPLIST_FILE = TwentyFourTests/Info.plist;
