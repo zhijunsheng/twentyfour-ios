@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardThreeLabel: UILabel!
     @IBOutlet weak var cardFourLabel: UILabel!
     
+    @IBOutlet weak var answerBox: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,9 +36,59 @@ class ViewController: UIViewController {
         cardThreeLabel.text = "\(cardThree)"
         cardFourLabel.text = "\(cardFour)"
         
+        print(answerBox.text)
+        
+        answerBox.text = ""
     }
+
     
 }
+
+/*
+ 
+ infix expression
+ 3 + 5
+ 
+ postfix expression
+ 
+ 3 5 +
+ 
+ 7 - 2: 7 2 -
+ 
+ 3 + 5 + 6:
+ 3 5 6 + +
+ 3 11 +
+ 14
+ 
+ 3 + 5 * 6:
+ 3 5 6 * +
+ 3 30 +
+ 33
+ 
+ (8 - 5 + 1) * 6:
+ 8 5 - 1 + 6 *
+ 3 1 + 6 *
+ 4 6 *
+ 24
+ 
+ 3 + 1: 3 1 +
+ 
+ 
+ 4 * 6:
+ 
+ (7 - ((((3 - 1))) * 8))))):
+7 3 - 1 - 8 *
+ 4 1 - 8 *
+ 3 8 *
+ 24
+ (9 - 10 + 5) * 6
+ 9 10 - 5 + 6 *
+ -1 5 + 6 *
+ 4 6 *
+ 24
+ 
+ 
+ */
 
 
 
