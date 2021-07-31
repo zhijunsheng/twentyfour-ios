@@ -1,13 +1,13 @@
 import Foundation
 
 struct Stack {
-    private var arrA: [Int] = []
+    private var arrA: [Double] = []
     
-    mutating func push(n: Int) {
+    mutating func push(n: Double) {
         arrA.append(n)
     }
     
-    mutating func pop() -> Int {
+    mutating func pop() -> Double {
         return arrA.removeLast()
     }
     

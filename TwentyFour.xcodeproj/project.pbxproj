@@ -14,6 +14,8 @@
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
 		E7059AC22123A48100057BC6 /* LoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7059AC12123A48100057BC6 /* LoopTests.swift */; };
 		E776953D26ABA6360056019B /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776953C26ABA6360056019B /* StackTests.swift */; };
+		E776953F26B2D33E0056019B /* ParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776953E26B2D33E0056019B /* ParseTests.swift */; };
+		E776954126B2D81F0056019B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E776954026B2D81F0056019B /* Utils.swift */; };
 		E78DEAA725FC540D0065C490 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78DEAA625FC540D0065C490 /* Stack.swift */; };
 		E7C79046227883B10038B7DA /* GoldbachThinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C79045227883B10038B7DA /* GoldbachThinkTests.swift */; };
 		E7F3257A2119138B006E92BC /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7F325792119138B006E92BC /* open_game.wav */; };
@@ -42,6 +44,8 @@
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7059AC12123A48100057BC6 /* LoopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopTests.swift; sourceTree = SOURCE_ROOT; };
 		E776953C26ABA6360056019B /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		E776953E26B2D33E0056019B /* ParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseTests.swift; sourceTree = "<group>"; };
+		E776954026B2D81F0056019B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E78DEAA625FC540D0065C490 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		E78DEAA825FD9EF10065C490 /* TwentyFour-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwentyFour-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7C79045227883B10038B7DA /* GoldbachThinkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldbachThinkTests.swift; sourceTree = "<group>"; };
@@ -88,6 +92,8 @@
 		36FE240820A271D000C22601 /* TwentyFour */ = {
 			isa = PBXGroup;
 			children = (
+				E776954026B2D81F0056019B /* Utils.swift */,
+				E78DEAA825FD9EF10065C490 /* TwentyFour-Bridging-Header.h */,
 				E7F3257B211913A1006E92BC /* pick_release.wav */,
 				E7F325792119138B006E92BC /* open_game.wav */,
 				36FE240D20A271D000C22601 /* Main.storyboard */,
@@ -97,7 +103,6 @@
 				36FE241020A271D200C22601 /* Assets.xcassets */,
 				36FE241220A271D200C22601 /* LaunchScreen.storyboard */,
 				36FE241520A271D200C22601 /* Info.plist */,
-				E78DEAA825FD9EF10065C490 /* TwentyFour-Bridging-Header.h */,
 			);
 			path = TwentyFour;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 				E7059AC12123A48100057BC6 /* LoopTests.swift */,
 				36FE242020A271D200C22601 /* Info.plist */,
 				E7C79045227883B10038B7DA /* GoldbachThinkTests.swift */,
+				E776953E26B2D33E0056019B /* ParseTests.swift */,
 				E776953C26ABA6360056019B /* StackTests.swift */,
 			);
 			path = TwentyFourTests;
@@ -220,6 +226,7 @@
 				36FE240C20A271D000C22601 /* ViewController.swift in Sources */,
 				E78DEAA725FC540D0065C490 /* Stack.swift in Sources */,
 				36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */,
+				E776954126B2D81F0056019B /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7C79046227883B10038B7DA /* GoldbachThinkTests.swift in Sources */,
+				E776953F26B2D33E0056019B /* ParseTests.swift in Sources */,
 				E7059AC22123A48100057BC6 /* LoopTests.swift in Sources */,
 				E776953D26ABA6360056019B /* StackTests.swift in Sources */,
 			);
