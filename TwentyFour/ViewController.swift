@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         let card4Raw = arc4random() % 10 + 1
         card1Label.text = "\(card1Raw)"
         card2Label.text = "\(card2Raw)"
-//        card3Label.text = "\(card3Raw)"
-//        card4Label.text = "\(card4Raw)"
+        card3Label.text = "\(card3Raw)"
+        card4Label.text = "\(card4Raw)"
     }
     
     
