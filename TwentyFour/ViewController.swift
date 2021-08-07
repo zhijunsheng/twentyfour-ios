@@ -116,12 +116,16 @@ class ViewController: UIViewController {
         let cardFourValue = arc4random() % 10 + 1
         cardFour.text = "\(cardFourValue)"
         
-        
+        textField.text = ""
     }
     @IBAction func answerCheck(_ sender: Any) {
 //        let twentyfour = textField.text
 //        if twentyfour == 24 {
-//            <#code#>
+        print("\(textField.text)")
+        _ = textField.text!.components(separatedBy: " ")
+        
+        print(textField.text!.components(separatedBy: " ")) // ["10", "1", "1", "+",...]
+        
 //        }
     }
 }

@@ -13,10 +13,28 @@ class StackTests: XCTestCase {
     func testStack2() {
         var stack2 = Stack()
         print(stack2)
+        /*
+         -----------
+         |
+         -----------
+         
+         */
         stack2.push(number: 7)
         stack2.push(number: 4)
+        /*
+         -----------
+         | 7 4
+         -----------
+         */
         XCTAssertEqual(4, stack2.pop())
+        /*
+         -----------
+         | 7
+         -----------
+         */
         XCTAssertEqual(7, stack2.pop())
+        XCTAssertTrue(stack2.isEmpty())
+
 
     }
     func testIsEmpty() {

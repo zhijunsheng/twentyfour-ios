@@ -13,6 +13,9 @@
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
 		822D65AF25FDA1F500EB9752 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822D65AE25FDA1F500EB9752 /* Stack.swift */; };
+		82461CF326B2CD42007F81B7 /* ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82461CF226B2CD42007F81B7 /* ParsingTests.swift */; };
+		82461CF726B95383007F81B7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82461CF626B95383007F81B7 /* Utils.swift */; };
+		82A7ACC726BC0F8800D8CC21 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82A7ACC626BC0F8800D8CC21 /* Rational.swift */; };
 		82AE341226AB984F00CBE312 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AE341126AB984F00CBE312 /* StackTests.swift */; };
 		82DC0FB52122552B00E68F8D /* open_game.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82DC0FB42122552A00E68F8D /* open_game.wav */; };
 		82DC0FB72122553800E68F8D /* pick_release.wav in Resources */ = {isa = PBXBuildFile; fileRef = 82DC0FB62122553800E68F8D /* pick_release.wav */; };
@@ -39,6 +42,9 @@
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822D65AE25FDA1F500EB9752 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		82461CF226B2CD42007F81B7 /* ParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingTests.swift; sourceTree = "<group>"; };
+		82461CF626B95383007F81B7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		82A7ACC626BC0F8800D8CC21 /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 		82AE341126AB984F00CBE312 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
 		82DC0FB42122552A00E68F8D /* open_game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = open_game.wav; sourceTree = "<group>"; };
 		82DC0FB62122553800E68F8D /* pick_release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pick_release.wav; sourceTree = "<group>"; };
@@ -86,12 +92,14 @@
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
 				822D65AE25FDA1F500EB9752 /* Stack.swift */,
+				82A7ACC626BC0F8800D8CC21 /* Rational.swift */,
 				82DC0FB42122552A00E68F8D /* open_game.wav */,
 				82DC0FB62122553800E68F8D /* pick_release.wav */,
 				36FE240D20A271D000C22601 /* Main.storyboard */,
 				36FE241020A271D200C22601 /* Assets.xcassets */,
 				36FE241220A271D200C22601 /* LaunchScreen.storyboard */,
 				36FE241520A271D200C22601 /* Info.plist */,
+				82461CF626B95383007F81B7 /* Utils.swift */,
 			);
 			path = TwentyFour;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 			children = (
 				36FE242020A271D200C22601 /* Info.plist */,
 				82AE341126AB984F00CBE312 /* StackTests.swift */,
+				82461CF226B2CD42007F81B7 /* ParsingTests.swift */,
 			);
 			path = TwentyFourTests;
 			sourceTree = "<group>";
@@ -211,7 +220,9 @@
 			files = (
 				36FE240C20A271D000C22601 /* ViewController.swift in Sources */,
 				822D65AF25FDA1F500EB9752 /* Stack.swift in Sources */,
+				82A7ACC726BC0F8800D8CC21 /* Rational.swift in Sources */,
 				36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */,
+				82461CF726B95383007F81B7 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82461CF326B2CD42007F81B7 /* ParsingTests.swift in Sources */,
 				82AE341226AB984F00CBE312 /* StackTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

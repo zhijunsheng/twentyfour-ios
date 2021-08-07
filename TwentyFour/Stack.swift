@@ -1,18 +1,23 @@
 import Foundation
 struct Stack {
-    var arr : [Int] = []
-    
-    // [____ 4, 5, 9] expensive
-    // [4, 5, 9, _____] very cheap
-    
-    mutating func push(number: Int) {
+    var arr : [Double] = []
+    mutating func push(number: Double) {
         arr.append(number)
     }
-    mutating func pop() -> Int {
+    mutating func pop() -> Double {
         return arr.removeLast()
     }
-    // is there a different way to check if arr is empty?
     func isEmpty() -> Bool {
         return arr.count == 0
     }
 }
+
+/*
+ 
+ After we implement Rational
+ 
+ arr: [Rational]
+ 
+ 0.3333... = Rational(p: 1, q: 3)
+ 
+ */
