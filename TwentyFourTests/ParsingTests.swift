@@ -11,7 +11,7 @@ class ParsingTests: XCTestCase {
         // (15 + 9 - 6) * 5 ÷ 9
         // 5 15 9 + 6 - * 9 ÷
         // 1 ÷ 3 * 3
-//         1 3 ÷ 3 *
+        //         1 3 ÷ 3 *
         
         // perfect way is : using a pair of numbers to represent rational number (p, q)  p/q, p and q are ints
     }
@@ -26,14 +26,40 @@ class ParsingTests: XCTestCase {
         XCTAssertEqual(1, Utils.gcd(p: 1, q: 7))
         XCTAssertEqual(1, Utils.gcd(p: 37, q: 33331))
         XCTAssertEqual(1, Utils.gcd(p: 64, q: 25))
+        XCTAssertEqual(13, Utils.gcd(p: 1053, q: 481))
+        XCTAssertEqual(7, Utils.gcd(p: 3094, q: 2513))
+        XCTAssertEqual(3094, Utils.gcd(p: 3094, q: 0))
+    }
+    func testUptateRat() {
+        XCTAssertEqual(1, Utils.updateRat(rat: Rational(p: 6, q: 12)).p)
+        XCTAssertEqual(2, Utils.updateRat(rat: Rational(p: 6, q: 12)).q)
+        
+    }
+    func testAdd() {
+        XCTAssertEqual(5, Utils.add(r1: Rational(p: 1, q: 2), r2: Rational(p: 1, q: 3)).p)
+        XCTAssertEqual(6, Utils.add(r1: Rational(p: 1, q: 2), r2: Rational(p: 1, q: 3)).q)
+        let r1 = Rational(p: 1, q: 2)
+        let r2 = Rational(p: 1, q: 3)
+        XCTAssertEqual(5, r1.add(rat: r2).p)
+        XCTAssertEqual(6, r2.add(rat: r1).q)
+        
+        
+    }
+    func testMinus() {
+        let r1 = Rational(p: 1, q: 3)
+        let r2 = Rational(p: 1, q: 2)
+        XCTAssertEqual(1, r2.minus(rat: r1).p)
+        XCTAssertEqual(6, r2.minus(rat: r1).q)
+        XCTAssertEqual(0, r2.minus(rat: r2).p)
+        
     }
     // 0.99999999... = 1
     // 0.33333333... * 3 =
-//    private struct rat {
-//        let p: Int
-//        let q: Int
-//
-//        // 3 ÷ 5
-//        // (3, 1) ÷ (5, 1) => (3, 5)
-//    }
+    //    private struct rat {
+    //        let p: Int
+    //        let q: Int
+    //
+    //        // 3 ÷ 5
+    //        // (3, 1) ÷ (5, 1) => (3, 5)
+    //    }
 }

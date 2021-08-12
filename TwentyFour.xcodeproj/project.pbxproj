@@ -92,6 +92,7 @@
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
 				822D65AE25FDA1F500EB9752 /* Stack.swift */,
+				82461CF626B95383007F81B7 /* Utils.swift */,
 				82A7ACC626BC0F8800D8CC21 /* Rational.swift */,
 				82DC0FB42122552A00E68F8D /* open_game.wav */,
 				82DC0FB62122553800E68F8D /* pick_release.wav */,
@@ -99,7 +100,6 @@
 				36FE241020A271D200C22601 /* Assets.xcassets */,
 				36FE241220A271D200C22601 /* LaunchScreen.storyboard */,
 				36FE241520A271D200C22601 /* Info.plist */,
-				82461CF626B95383007F81B7 /* Utils.swift */,
 			);
 			path = TwentyFour;
 			sourceTree = "<group>";

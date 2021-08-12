@@ -28,42 +28,63 @@ struct Utils {
         }
         return 0
     }
+    
+    /*
+     We are not talking about arithmatics of fractions.
+     
+     gcd is just gcd. It has nothing to do with the above.
+     
+     The greatest common divisor of 0 and 12 is NOT 1. It is 12.
+     
+     p = 0, q ≠ 0
+     
+     q = 0, p ≠ 0
+     
+     p = 0, q = 0, gcd is not defined, throws
+     */
     static func gcd(p: Int, q: Int) -> Int {
-        /*
-         585 = 13 * 45
-         936 = 13 * 72
-         936 ÷ 585 = 1 ...... 351
-         585 ÷ 351 = 1 ...... 234
-         351 ÷ 234 = 1 ...... 117
-         234 ÷ 117 = 2 ...... 0
-         
-         a ÷ (b) = c ...... d
-         
-         n / d = q ...... r
-         
-         p = 585, q = 936
-         r1 = q % p = 936 % 585 = 351
-         r2 = p % r1 = 585 % 351 = 234
-         r3 = r1 % r2 = 351 % 234 = 117
-         r4 = r2 % r3 = 234 % 117 = 0
-         
+        if p == 0 {
+            return q
+        }else if q == 0 {
+            return p
+        }
+        var a = p
+        var b = q
+        var r = a % b
+        while r != 0 {
+            a = b
+            b = r
+            r = a % b
+        }
+        return b
+    }
+    
+    static func updateRat(rat: Rational) -> Rational {
+        let pq = gcd(p: rat.p, q: rat.q)
+        return Rational(p: rat.p / pq, q: rat.q / pq)
+    }
+    static func add(r1: Rational, r2: Rational) -> Rational {
+        let q = lcm(q1: r1.q, q2: r2.q)
+        let p1 = r1.p * q / r1.q
+        let p2 = r2.p * q / r2.q
+        let p = p1 + p2
+        return updateRat(rat: Rational(p: p, q: q))
+    }
+    static func minus(r1: Rational, r2: Rational) -> Rational {
+        let q = lcm(q1: r1.q, q2: r2.q)
+        
+        let p1 = r1.p * q / r1.q
+        let p2 = r2.p * q / r2.q
+        let p = p1 - p2
+        return updateRat(rat: Rational(p: p, q: q))
+        /*   p q
+         r1: 1/2
+         r2: 1/3
+         q: 6
+         p1: 3
+         p2: 2
+         p = 1
+         return: 1/6
          */
-        let r1 = max(p, q) % min(p, q)
-        if r1 == 0 {
-            return min(p, q)
-        }
-        let r2 = min(p, q) % r1
-        if r2 == 0 {
-            return r1
-        }
-        let r3 = r1 % r2
-        if r3 == 0 {
-            return r2
-        }
-        let r4 = r2 % r3
-        if r4 == 0 {
-            return r3
-        }
-        return 1
     }
 }
