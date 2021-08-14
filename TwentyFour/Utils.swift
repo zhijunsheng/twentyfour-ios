@@ -1,21 +1,21 @@
 import Foundation
 struct Utils {
-    static func parse(userInput: String) -> Double {
+    static func parse(userInput: String) -> Rational {
         let input = userInput.components(separatedBy: " ")
         var s = Stack()
         for ios in input {
             if ios == "+" {
-                s.push(number: s.pop() + s.pop())
+                s.push(number: s.pop().add(rat: s.pop()))
             }else if ios == "-" {
                 let i1 = s.pop()
-                s.push(number: s.pop() - i1)
+                s.push(number: s.pop().minus(rat: i1))
             }else if ios == "*" {
-                s.push(number: s.pop() * s.pop())
+                s.push(number: s.pop().times(rat: s.pop()))
             }else if ios == "÷" {
                 let i2 = s.pop()
-                s.push(number: s.pop() / i2)
+                s.push(number: s.pop().divide(rat: i2))
             }else{
-                s.push(number: Double(ios)!)
+                s.push(number: Rational(p: Int(ios)!, q: 1))
             }
         }
         return s.pop()
@@ -28,20 +28,6 @@ struct Utils {
         }
         return 0
     }
-    
-    /*
-     We are not talking about arithmatics of fractions.
-     
-     gcd is just gcd. It has nothing to do with the above.
-     
-     The greatest common divisor of 0 and 12 is NOT 1. It is 12.
-     
-     p = 0, q ≠ 0
-     
-     q = 0, p ≠ 0
-     
-     p = 0, q = 0, gcd is not defined, throws
-     */
     static func gcd(p: Int, q: Int) -> Int {
         if p == 0 {
             return q
@@ -77,14 +63,11 @@ struct Utils {
         let p2 = r2.p * q / r2.q
         let p = p1 - p2
         return updateRat(rat: Rational(p: p, q: q))
-        /*   p q
-         r1: 1/2
-         r2: 1/3
-         q: 6
-         p1: 3
-         p2: 2
-         p = 1
-         return: 1/6
-         */
+    }
+    static func times(r1: Rational, r2: Rational) -> Rational {
+        return updateRat(rat: Rational(p: r1.p * r2.p, q: r1.q * r2.q))
+    }
+    static func divide(r1: Rational, r2: Rational) -> Rational {
+        return times(r1: r1, r2: Rational(p: r2.q, q: r2.p))
     }
 }

@@ -2,12 +2,11 @@ import XCTest
 @testable import TwentyFour
 class ParsingTests: XCTestCase {
     func testParse() {
-        XCTAssertEqual(12, Utils.parse(userInput: "2 3 7 + +"))
-        XCTAssertEqual(38, Utils.parse(userInput: "87 43 - 6 -"))
-        XCTAssertEqual(24, Utils.parse(userInput: "2 3 4 * *"))
-        XCTAssertEqual(5, Utils.parse(userInput: "105 3 ÷ 7 ÷"))
-        XCTAssertEqual(10, Utils.parse(userInput: "5 15 9 + 6 - * 9 ÷"))
-        XCTAssertEqual(1.0, Utils.parse(userInput: "1 3 ÷ 3 *"))
+        XCTAssertEqual(12, Utils.parse(userInput: "2 3 7 + +").p)
+        XCTAssertEqual(38, Utils.parse(userInput: "87 43 - 6 -").p)
+        XCTAssertEqual(24, Utils.parse(userInput: "2 3 4 * *").p)
+        XCTAssertEqual(10, Utils.parse(userInput: "5 15 9 + 6 - * 9 ÷").p)
+        XCTAssertEqual(1, Utils.parse(userInput: "1 3 ÷ 3 *").p)
         // (15 + 9 - 6) * 5 ÷ 9
         // 5 15 9 + 6 - * 9 ÷
         // 1 ÷ 3 * 3
@@ -53,13 +52,16 @@ class ParsingTests: XCTestCase {
         XCTAssertEqual(0, r2.minus(rat: r2).p)
         
     }
-    // 0.99999999... = 1
-    // 0.33333333... * 3 =
-    //    private struct rat {
-    //        let p: Int
-    //        let q: Int
-    //
-    //        // 3 ÷ 5
-    //        // (3, 1) ÷ (5, 1) => (3, 5)
-    //    }
+    func testTimes() {
+        let r1 = Rational(p: 1, q: 4)
+        let r2 = Rational(p: 5, q: 3)
+        XCTAssertEqual(5, r1.times(rat: r2).p)
+        XCTAssertEqual(12, r1.times(rat: r2).q)
+    }
+    func testDivide() {
+        let r1 = Rational(p: 6, q: 7)
+        let r2 = Rational(p: 9, q: 4)
+        XCTAssertEqual(8, r1.divide(rat: r2).p)
+        XCTAssertEqual(21, r1.divide(rat: r2).q)
+    }
 }

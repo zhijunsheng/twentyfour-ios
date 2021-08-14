@@ -1,6 +1,7 @@
 import XCTest
 @testable import TwentyFour
 class StackTests: XCTestCase {
+    /*
     func testStack1() {
         var stack = Stack()
         print(stack)
@@ -43,4 +44,5 @@ class StackTests: XCTestCase {
         stackEmpty.push(number: 8)
         XCTAssertFalse(stackEmpty.isEmpty())
     }
+ */
 }
