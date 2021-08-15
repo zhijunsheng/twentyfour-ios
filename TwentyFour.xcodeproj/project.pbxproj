@@ -13,6 +13,11 @@
 		36FE241120A271D200C22601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241020A271D200C22601 /* Assets.xcassets */; };
 		36FE241420A271D200C22601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FE241220A271D200C22601 /* LaunchScreen.storyboard */; };
 		36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FE241E20A271D200C22601 /* TwentyFourTests.swift */; };
+		7543E89526BD874F00898E26 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543E89426BD874E00898E26 /* Utils.swift */; };
+		7543E89726BD904400898E26 /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543E89626BD904300898E26 /* UtilsTests.swift */; };
+		7543E89926C0A24F00898E26 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543E89826C0A24F00898E26 /* Rational.swift */; };
+		7543E89B26C0A65300898E26 /* RationalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7543E89A26C0A65300898E26 /* RationalTests.swift */; };
+		755AA37925FC71CD00F51D25 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755AA37825FC71CD00F51D25 /* Stack.swift */; };
 		755C15EA2121C98000A82E32 /* pick_release.wav in Resources */ = {isa = PBXBuildFile; fileRef = 755C15E92121C98000A82E32 /* pick_release.wav */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +42,11 @@
 		36FE241A20A271D200C22601 /* TwentyFourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwentyFourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FE241E20A271D200C22601 /* TwentyFourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyFourTests.swift; sourceTree = "<group>"; };
 		36FE242020A271D200C22601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7543E89426BD874E00898E26 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		7543E89626BD904300898E26 /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		7543E89826C0A24F00898E26 /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		7543E89A26C0A65300898E26 /* RationalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RationalTests.swift; sourceTree = "<group>"; };
+		755AA37825FC71CD00F51D25 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		755C15E92121C98000A82E32 /* pick_release.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pick_release.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +91,9 @@
 			children = (
 				36FE240920A271D000C22601 /* AppDelegate.swift */,
 				36FE240B20A271D000C22601 /* ViewController.swift */,
+				755AA37825FC71CD00F51D25 /* Stack.swift */,
+				7543E89426BD874E00898E26 /* Utils.swift */,
+				7543E89826C0A24F00898E26 /* Rational.swift */,
 				755C15E92121C98000A82E32 /* pick_release.wav */,
 				36FE240D20A271D000C22601 /* Main.storyboard */,
 				36FE241020A271D200C22601 /* Assets.xcassets */,
@@ -94,7 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				36FE241E20A271D200C22601 /* TwentyFourTests.swift */,
+				7543E89626BD904300898E26 /* UtilsTests.swift */,
 				36FE242020A271D200C22601 /* Info.plist */,
+				7543E89A26C0A65300898E26 /* RationalTests.swift */,
 			);
 			path = TwentyFourTests;
 			sourceTree = "<group>";
@@ -202,7 +217,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FE240C20A271D000C22601 /* ViewController.swift in Sources */,
+				755AA37925FC71CD00F51D25 /* Stack.swift in Sources */,
+				7543E89926C0A24F00898E26 /* Rational.swift in Sources */,
 				36FE240A20A271D000C22601 /* AppDelegate.swift in Sources */,
+				7543E89526BD874F00898E26 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				36FE241F20A271D200C22601 /* TwentyFourTests.swift in Sources */,
+				7543E89726BD904400898E26 /* UtilsTests.swift in Sources */,
+				7543E89B26C0A65300898E26 /* RationalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +383,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = PK8GB92U8A;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J8B74FCZCC;
+				DEVELOPMENT_TEAM = PK8GB92U8A;
 				INFOPLIST_FILE = TwentyFour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
