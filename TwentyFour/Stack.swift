@@ -21,5 +21,5 @@ struct Stack {
     
     func isEmpty() -> Bool {
         return arr.count == 0
-    }
+    }    
 }

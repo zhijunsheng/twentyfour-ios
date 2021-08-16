@@ -12,41 +12,21 @@ import XCTest
 class StackTests: XCTestCase {
     func testPush() {
         var stack: Stack = Stack()
-        
-        print(stack.arr)
         stack.push(a: 4)
         stack.push(a: 5)
-        print(stack.arr)
-        let n: Int = stack.pop()
-        print(stack.arr)
-        print(stack.arr)
-        print(n)
-     
+        
+        XCTAssertEqual(5, stack.pop())
+        XCTAssertEqual(4, stack.pop())
     }
 
     func testIsEmpty() {
         var stack = Stack()
         XCTAssertTrue(stack.isEmpty())
         stack.push(a: 5)
-        XCTAssertFalse(stack.isEmpty()) 
-    }
-
-    func add(a: Int,b: Int) -> Int {
-        return a + b
-    }
-    
-    func testAdd() {
-        XCTAssertEqual(7, add(a: 3, b: 4))
-        XCTAssertEqual(4325, add(a: 300, b: 4025))
-    }
-    
-    func square(a: Int) -> Int {
-        return  a * a
-    }
-    
-    
-    func testSquare() {
-        XCTAssertEqual(4, square(a: 2))
-        XCTAssertEqual(25, square(a: 5))
+        stack.push(a: 4)
+        XCTAssertFalse(stack.isEmpty())
+        _ = stack.pop()
+        _ = stack.pop()
+        XCTAssertTrue(stack.isEmpty())
     }
 }

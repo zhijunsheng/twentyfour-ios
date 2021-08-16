@@ -15,6 +15,7 @@
 		B41990D62306E4F6000ABE81 /* LoopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41990D52306E4F6000ABE81 /* LoopTests.swift */; };
 		ECB9674326AEF165009C310B /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB9674226AEF164009C310B /* Stack.swift */; };
 		ECB9674726AEF4F9009C310B /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB9674626AEF4F9009C310B /* StackTests.swift */; };
+		ECF33F2426C1616700176852 /* PrimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF33F2326C1616700176852 /* PrimeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B41990D52306E4F6000ABE81 /* LoopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopTests.swift; sourceTree = "<group>"; };
 		ECB9674226AEF164009C310B /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		ECB9674626AEF4F9009C310B /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		ECF33F2326C1616700176852 /* PrimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				36FE242020A271D200C22601 /* Info.plist */,
 				B41990D52306E4F6000ABE81 /* LoopTests.swift */,
 				ECB9674626AEF4F9009C310B /* StackTests.swift */,
+				ECF33F2326C1616700176852 /* PrimeTests.swift */,
 			);
 			path = TwentyFourTests;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				ECB9674726AEF4F9009C310B /* StackTests.swift in Sources */,
 				B41990D62306E4F6000ABE81 /* LoopTests.swift in Sources */,
+				ECF33F2426C1616700176852 /* PrimeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
