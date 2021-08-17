@@ -20,6 +20,21 @@ struct Utils {
         }
         return s.pop()
     }
+    static func isCheating(userInput: String, card1: String, card2: String, card3: String, card4: String) -> Bool {
+        let input = userInput.components(separatedBy: " ")
+        var intArr: [String] = []
+        let card = [card1, card2, card3, card4].sorted()
+        for ios in input {
+            if ios == "1" || ios == "2" || ios == "3" || ios == "4" || ios == "5"
+            || ios == "6" || ios == "7" || ios == "8" || ios == "9" || ios == "10" {
+                intArr.append(ios)
+            }
+        }
+        if intArr.sorted() == card {
+            return false
+        }
+        return true
+    }
     static func lcm(q1: Int, q2: Int) -> Int {
         for i in 1...10000 {
             if i % q1 == 0 && i % q2 == 0 {

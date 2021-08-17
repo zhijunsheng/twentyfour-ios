@@ -14,6 +14,10 @@ class ParsingTests: XCTestCase {
         
         // perfect way is : using a pair of numbers to represent rational number (p, q)  p/q, p and q are ints
     }
+    func testIsCheating() {
+        XCTAssertTrue(Utils.isCheating(userInput: "24", card1: "2", card2: "4", card3: "2", card4: "4"))
+        XCTAssertFalse(Utils.isCheating(userInput: "6 7 * 6 + 2 ÷", card1: "6", card2: "2", card3: "7", card4: "6"))
+    }
     func testLCM() {
         XCTAssertEqual(35, Utils.lcm(q1: 5, q2: 7))
         XCTAssertEqual(48, Utils.lcm(q1: 24, q2: 16))

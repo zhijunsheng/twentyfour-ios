@@ -39,6 +39,9 @@ class ViewController: UIViewController {
     }
     @IBAction func answerCheck(_ sender: Any) {
         if Utils.parse(userInput: textField.text!).p == 24 {
+            if Utils.isCheating(userInput: textField.text!, card1: cardOne.text!, card2: cardTwo.text!, card3: cardThree.text!, card4: cardFour.text!) {
+                label.text = "STOP CHEATING!"
+            }
             label.text = "✅"
         }else{
             label.text = "❌"
