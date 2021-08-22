@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,10 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfj-IK-LOK">
-                                <rect key="frame" x="20" y="20" width="728" height="120"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfj-IK-LOK">
+                                <rect key="frame" x="20" y="31" width="728" height="120"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZN-Tw-MVq" userLabel="card2">
+                                <rect key="frame" x="280" y="148" width="209" height="119.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BS-mv-tCi" userLabel="card3">
+                                <rect key="frame" x="354" y="275" width="60" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgb-xN-0xZ">
+                                <rect key="frame" x="354" y="403" width="62" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -27,14 +46,43 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gfj-IK-LOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5EF-ty-sNb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9BS-mv-tCi" secondAttribute="trailing" constant="354" id="6Zn-ka-lFh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rgb-xN-0xZ" secondAttribute="trailing" constant="352" id="Cao-H6-Zq2"/>
+                            <constraint firstItem="rgb-xN-0xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="354" id="EBa-Rn-BXd"/>
+                            <constraint firstItem="GZN-Tw-MVq" firstAttribute="top" secondItem="gfj-IK-LOK" secondAttribute="bottom" constant="8" symbolic="YES" id="F1u-Fp-bTM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gfj-IK-LOK" secondAttribute="trailing" constant="20" id="FSL-1J-CPJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GZN-Tw-MVq" secondAttribute="trailing" constant="279" id="KWA-YB-ag3"/>
+                            <constraint firstItem="GZN-Tw-MVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="280" id="La6-CS-nLV"/>
+                            <constraint firstItem="rgb-xN-0xZ" firstAttribute="top" secondItem="9BS-mv-tCi" secondAttribute="bottom" constant="8" symbolic="YES" id="Nj7-au-A2f"/>
                             <constraint firstItem="gfj-IK-LOK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ahG-vB-Lb1"/>
+                            <constraint firstItem="9BS-mv-tCi" firstAttribute="top" secondItem="GZN-Tw-MVq" secondAttribute="bottom" constant="7.5" id="r2O-Qd-3YI"/>
+                            <constraint firstItem="9BS-mv-tCi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="354" id="sFz-gb-a3x"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="card1" destination="gfj-IK-LOK" id="RGS-xl-bbx"/>
+                        <outlet property="card2" destination="GZN-Tw-MVq" id="i3U-SF-fOG"/>
+                        <outlet property="card3" destination="9BS-mv-tCi" id="xso-t3-U2r"/>
+                        <outlet property="card4" destination="rgb-xN-0xZ" id="eLP-Hb-fVf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135.9375" y="133.0078125"/>
+            <point key="canvasLocation" x="214.84375" y="-16.40625"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
