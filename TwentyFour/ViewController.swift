@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         let numberSmall2 = number2 % 10 + 1
         let numberSmall3 = number3 % 10 + 1
         let numberSmall4 = number4 % 10 + 1
-      
+        
         cardOneLabel.text = "\(numberSmall1 )"
         cardTwoLabel.text = "\(numberSmall2)"
         cardThreeLabel.text = "\(numberSmall3 )"
