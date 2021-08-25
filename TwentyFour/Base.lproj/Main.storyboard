@@ -18,29 +18,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfj-IK-LOK">
-                                <rect key="frame" x="20" y="20" width="728" height="120"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="20" y="20" width="728" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZN-Tw-MVq" userLabel="card2">
-                                <rect key="frame" x="20" y="148" width="728" height="120"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="20" y="118" width="728" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BS-mv-tCi" userLabel="card3">
-                                <rect key="frame" x="20" y="276" width="728" height="120"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="20" y="216" width="728" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgb-xN-0xZ">
-                                <rect key="frame" x="20" y="404" width="728" height="120"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="20" y="314" width="728" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGJ-hM-coq">
+                                <rect key="frame" x="20" y="412" width="728" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" systemColor="systemPurpleColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xA5-pp-CAo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -50,13 +60,16 @@
                             <constraint firstItem="gfj-IK-LOK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="B45-8S-1j6"/>
                             <constraint firstItem="9BS-mv-tCi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H8n-XC-XaJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GZN-Tw-MVq" secondAttribute="trailing" constant="20" id="IGR-N4-kTC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aGJ-hM-coq" secondAttribute="trailing" constant="20" id="K0p-hC-0yX"/>
                             <constraint firstItem="GZN-Tw-MVq" firstAttribute="top" secondItem="gfj-IK-LOK" secondAttribute="bottom" constant="8" symbolic="YES" id="Uw5-HG-Rm2"/>
                             <constraint firstItem="rgb-xN-0xZ" firstAttribute="top" secondItem="9BS-mv-tCi" secondAttribute="bottom" constant="8" symbolic="YES" id="W4k-iU-aHQ"/>
                             <constraint firstItem="9BS-mv-tCi" firstAttribute="top" secondItem="GZN-Tw-MVq" secondAttribute="bottom" constant="8" symbolic="YES" id="XPO-XH-hwr"/>
                             <constraint firstItem="GZN-Tw-MVq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aa0-Xx-cvd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9BS-mv-tCi" secondAttribute="trailing" constant="20" id="eaU-Yz-2hD"/>
                             <constraint firstItem="rgb-xN-0xZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lrc-C6-fxq"/>
+                            <constraint firstItem="aGJ-hM-coq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mwq-Jd-9sH"/>
                             <constraint firstItem="gfj-IK-LOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p3x-Zd-Uu1"/>
+                            <constraint firstItem="aGJ-hM-coq" firstAttribute="top" secondItem="rgb-xN-0xZ" secondAttribute="bottom" constant="8" symbolic="YES" id="xSn-h1-FBO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -77,6 +90,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
