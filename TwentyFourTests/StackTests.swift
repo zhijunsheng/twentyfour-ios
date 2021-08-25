@@ -36,14 +36,16 @@ class StackTests: XCTestCase {
         for sym in arr {
             print("\(sym)")
             if sym == "+" {
-                let a = stack.pop()
-                let b = stack.pop()
-                let sum = a + b
-                stack.push(a: sum)
+                stack.push(a: stack.pop() + stack.pop())
             } else if sym == "-" {
-                let num1 = stack.pop()
-                let num2 = stack.pop()
-                stack.push(a: num2 - num1)
+                stack.push(a: -stack.pop() + stack.pop())
+            } else if sym == "*" {
+                stack.push(a: stack.pop() * stack.pop())
+//            } else if sym == "/" {
+                
+                
+                
+                
             } else {
                 stack.push(a: Int(sym)!)
             }
@@ -52,15 +54,23 @@ class StackTests: XCTestCase {
         let answer = stack.pop()
         return answer
     }
+    /*
+     
+     3 - 8
+     
+     3   8  => 5
+     
+     */
     
     func testParse() {
-//        XCTAssertEqual(24, parse(expr: "9 7 - 1 + 8 * "))
+        XCTAssertEqual(24, parse(expr: "9 7 - 1 + 8 *"))
         XCTAssertEqual(5, parse(expr: "2 3 +"))
         XCTAssertEqual(12, parse(expr: "2 3 7 + +"))
         XCTAssertEqual(12, parse(expr: "2 3 + 7 +"))
         XCTAssertEqual(2, parse(expr: "9 7 -"))
         XCTAssertEqual(14, parse(expr: "13 4 5 - -"))
         XCTAssertEqual(12, parse(expr: "13 4 + 5 -"))
+        XCTAssertEqual(34, parse(expr: "13 4 + 2 *"))
     }
     
     func testPush() {
