@@ -17,6 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        print("----------------------")
+    }
+    
     @IBAction func deal(_ sender: Any) {
    
         let cardOneNum = arc4random() % 10 + 1

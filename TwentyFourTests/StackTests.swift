@@ -28,7 +28,7 @@ class StackTests: XCTestCase {
      8 3 *
      ...
      */
-    func parse(expr: String) -> Int { // expr = "9 7 -"
+    func parse(expr: String) -> Double { // expr = "9 7 -"
         let arr = expr.components(separatedBy: " ") // ["9", "7", "-"]
         print(arr)
         var stack: Stack = Stack() // we create a stack for use
@@ -41,13 +41,12 @@ class StackTests: XCTestCase {
                 stack.push(a: -stack.pop() + stack.pop())
             } else if sym == "*" {
                 stack.push(a: stack.pop() * stack.pop())
-//            } else if sym == "/" {
-                
-                
-                
-                
+            } else if sym == "/" {
+                let num1 = stack.pop()
+                let num2 = stack.pop()
+                stack.push(a:num2 / num1)
             } else {
-                stack.push(a: Int(sym)!)
+                stack.push(a: Double(sym)!)
             }
         }
         
@@ -71,6 +70,12 @@ class StackTests: XCTestCase {
         XCTAssertEqual(14, parse(expr: "13 4 5 - -"))
         XCTAssertEqual(12, parse(expr: "13 4 + 5 -"))
         XCTAssertEqual(34, parse(expr: "13 4 + 2 *"))
+        XCTAssertEqual(34, parse(expr: "68 2 /"))
+        XCTAssertEqual(1,parse(expr: "1 3 / 3 *"))
+        print("\(7 / 3)")
+        // "1 / 3 * 3"
+        // "1 3 / 3 *" will fail :-(
+        
     }
     
     func testPush() {

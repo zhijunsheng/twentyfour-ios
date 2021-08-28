@@ -9,13 +9,13 @@
 import Foundation
 
 struct Stack {
-    var arr:[Int] = []
+    var arr:[Double] = []
     
-    mutating func push(a: Int) {
+    mutating func push(a: Double) {
         arr.append(a)
     }
     
-    mutating func pop() -> Int {
+    mutating func pop() -> Double {
         return arr.removeLast()
     }
     
