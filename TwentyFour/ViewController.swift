@@ -20,11 +20,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("----------------------")
+        random()
     }
     
     @IBAction func deal(_ sender: Any) {
-   
+        random()
+        answerTextField.text = ""
+    }
+    
+    @IBAction func save(_ sender: Any) {
+        var fourCards = ""
+        fourCards += "       \(cardOneLabel.text!)"
+        fourCards += "       \(cardTwoLabel.text!)"
+        fourCards += "       \(cardThreeLabel.text!)"
+        fourCards += "       \(cardFourLabel.text!)"
+        cardLabel.text = fourCards
+    }
+    
+    func random() {
         let cardOneNum = arc4random() % 10 + 1
         cardOneLabel.text = "\(cardOneNum)"
         
@@ -36,54 +49,5 @@ class ViewController: UIViewController {
         
         let cardFourNum = arc4random() % 10 + 1
         cardFourLabel.text = "\(cardFourNum)"
-        
-        answerTextField.text = ""
-        
-    }
-    
-    @IBAction func save(_ sender: Any) {
-        var fourCards = ""
-        
-        fourCards += "       \(cardOneLabel.text!)"
-        fourCards += "       \(cardTwoLabel.text!)"
-        fourCards += "       \(cardThreeLabel.text!)"
-        fourCards += "       \(cardFourLabel.text!)"
-        cardLabel.text = fourCards
     }
 }
-
-/*
- 
- infix expression:
- 
- 2 + 3 : 2 3 +
- 5 - 1 : 5 1 -
- 2 + 3 - 1 : 2 3 + 1 -
- 
- 2 - 3 : 2 3 -
- 2 - (4 - 1) : 2 4 1 - -
- 
- 2 + 3 * 4 : 2 3 4 * +
- 6 + 4 : 6 4 +
- 2 * 3 + 4 : 2 3 * 4 +
- 
- 2 3 4 + * : 2 7 *
- 
- 2 3 1 + - : 2 - (3 + 1)
-
- 
- 10 * (4 / 2) + 4 : 10 4 2 / * 4 +
- 10 + 10 + 9 - 5 =  10 10 + 9 + 5 -
- postfix expression:
- 
- 2 3 +
- 2 3 +
- 
- 
- 
- 
- */
-
-
-
-
