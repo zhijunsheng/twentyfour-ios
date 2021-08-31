@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         textBox.text = ""
     }
     
+    @IBAction func checkAnswer(_ sender: UIButton) {
+        guard let expression = textBox.text else { return }
+        print(expression)
+    }
     func show4RandomCards() {
         let number1 = arc4random()
         let number2 = arc4random()
@@ -47,6 +51,56 @@ class ViewController: UIViewController {
         cardFourLabel.text = "\(numberSmall4)"
     }
 }
+
+/*
+ 
+ normal infix expression
+ 3 + 5
+ 
+ (3 + 5) * (2 + 1)
+ 
+ learn the famous postfix expr
+ 
+ 3 5 +
+ 
+ infix 9 - 2 = 7
+ postfix 9 2 - = 7
+ 
+ 3 * 4 => 3 4 *
+ 
+ (3+5)*(2+1)
+ 3 5 + 2 1 + *
+ 
+ 1 2 3 + + =>
+ 1 5 +
+ 6
+ 
+ 1 2 + 3 +
+ 3 3 +
+ 6
+ 
+ infix
+ 3 + 2 * 5 =>
+ postfix:
+ 3 2 + 5 *
+ 
+ 8 4 - 10 10 + +
+ 4 10 10 + +
+ 4 20 +
+ 24
+ 
+ 8 4 - 10 + 10 +
+ 4 10 + 10 +
+ 14 10 +
+ 24
+ 
+ 6 3 / 9 * 6 +
+ 2 9 * 6 +
+ 18 6 +
+ 24
+ 
+ 
+ */
 
 
 
