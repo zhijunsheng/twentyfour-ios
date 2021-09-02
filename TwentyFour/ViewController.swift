@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         random()
     }
     
+    @IBAction func check(_ sender: Any) {
+        print("\(answerTextField.text)") // we get "5 3 +"
+        
+        // we need to parse "5 3 +" with the help of Stack
+        
+    }
+    
     @IBAction func deal(_ sender: Any) {
         random()
         answerTextField.text = ""

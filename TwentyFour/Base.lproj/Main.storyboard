@@ -23,8 +23,8 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppb-md-xOP">
-                                <rect key="frame" x="20" y="389.5" width="728" height="129"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
+                                <rect key="frame" x="20" y="332.5" width="728" height="100.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="83"/>
                                 <color key="textColor" red="0.066578375547367452" green="0.0" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" systemColor="scrollViewTexturedBackgroundColor"/>
@@ -40,14 +40,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq2-kx-ves">
-                                <rect key="frame" x="16" y="117.5" width="736" height="128"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
+                                <rect key="frame" x="16" y="117.5" width="736" height="99.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="83"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3J-Nr-beL">
-                                <rect key="frame" x="20" y="526.5" width="728" height="132"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <rect key="frame" x="20" y="441" width="728" height="112"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="83"/>
                                 <state key="normal" title="next">
                                     <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -72,8 +72,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px9-KO-E69">
-                                <rect key="frame" x="16" y="253.5" width="736" height="128"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="107"/>
+                                <rect key="frame" x="16" y="225" width="736" height="99.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="83"/>
                                 <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -83,6 +83,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="86"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXh-Ea-IB8">
+                                <rect key="frame" x="24" y="561" width="721" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <state key="normal" title="check"/>
+                                <connections>
+                                    <action selector="check:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y4B-YU-fdU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
